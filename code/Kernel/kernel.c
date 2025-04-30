@@ -2,6 +2,7 @@
 
 task_t APPS[] = {
     {0, 0, task_idle_process},
+    {5, 5, task_OLED_screen},
     {10, 10, task_leds_display},
 };
 const u16 TASK_SIZE = sizeof(APPS) / sizeof(APPS[0]);

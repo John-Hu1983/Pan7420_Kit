@@ -2,7 +2,7 @@
 #define _OVERALL_H_
 
 #include "string.h"
-#include "stdbool.h" 
+#include "stdbool.h"
 #include "stdint.h"
 #include "stdio.h"
 #include "stdlib.h"
@@ -42,9 +42,18 @@
 #include "../RFid/bsp_rfspi_sw.h"
 #include "../RFid/bsp_pn298.h"
 
+#include "../OLED/oled_rdwr.h"
+#include "../OLED/oled.h"
+
+#include "../Gui/bmp.h"
+#include "../Gui/oledfont.h"
+#include "../Gui/gui.h"
+#include "../gui/test.h"
+
 #include "../Kernel/os_beason.h"
 #include "../Kernel/kernel.h"
 
 #include "../App/app_leds.h"
+#include "../App/app_oled.h"
 
 #endif
