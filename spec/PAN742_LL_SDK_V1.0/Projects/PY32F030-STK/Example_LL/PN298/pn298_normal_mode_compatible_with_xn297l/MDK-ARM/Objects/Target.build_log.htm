@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Hu John, Spin, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      Segger\JL2CM3.dll V2.99.45.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\JohnHu\datasheet\MCU\PanChip\PAN742_LL_SDK_V1.0\Projects\PY32F030-STK\Example_LL\PN298\pn298_normal_mode_compatible_with_xn297l\MDK-ARM\Project.uvprojx
+Project File Date:  04/28/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target'
+compiling bsp_uart.c...
+compiling py32f0xx_ll_led.c...
+compiling py32f0xx_ll_gpio.c...
+compiling bsp_timer.c...
+../../bsp/bsp_delay.c(18): error: expected '(' after 'asm'
+   18 | __ASM void __delay_pan742(uint32_t cycle)
+      |       ^
+../../bsp/bsp_delay.c(18): error: expected ';' after top-level asm block
+   18 | __ASM void __delay_pan742(uint32_t cycle)
+      |      ^
+      |      ;
+../../bsp/bsp_delay.c(20): error: use of undeclared identifier '__delay_pan742_loop'; did you mean '__delay_pan742'?
+   20 | __delay_pan742_loop
+      | ^~~~~~~~~~~~~~~~~~~
+      | __delay_pan742
+../../bsp/bsp_delay.c(18): note: '__delay_pan742' declared here
+   18 | __ASM void __delay_pan742(uint32_t cycle)
+      |            ^
+../../bsp/bsp_delay.c(20): error: expected ';' after expression
+   20 | __delay_pan742_loop
+      |                    ^
+      |                    ;
+../../bsp/bsp_delay.c(21): error: use of undeclared identifier 'SUBS'
+   21 |     SUBS    r0,r0,#1
+      |     ^
+../../bsp/bsp_delay.c(20): warning: expression result unused [-Wunused-value]
+   20 | __delay_pan742_loop
+      | ^~~~~~~~~~~~~~~~~~~
+1 warning and 5 errors generated.
+compiling bsp_delay.c...
+compiling py32f0xx_ll_utils.c...
+compiling bsp.c...
+assembling startup_py32f030xx.s...
+compiling py32f030xx_ll_Start_Kit.c...
+compiling bsp_rfspi_sw.c...
+compiling py32f0xx_ll_dma.c...
+../../bsp/bsp_pn298.c(351): error: call to undeclared library function 'printf' with type 'int (const char *, ...)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  351 |                 printf("Tx cnt:%d\r\n", ++cnt);
+      |                 ^
+../../bsp/bsp_pn298.c(351): note: include the header <stdio.h> or explicitly provide a declaration for 'printf'
+1 error generated.
+compiling bsp_pn298.c...
+compiling system_py32f0xx.c...
+compiling py32f0xx_it.c...
+compiling py32f0xx_ll_rcc.c...
+compiling main.c...
+compiling py32f0xx_ll_tim.c...
+compiling py32f0xx_ll_usart.c...
+".\Objects\Target.axf" - 6 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Puya
+                https://www.puyasemi.com/uploadfiles/Puya.PY32F0xx_DFP.1.2.2.pack
+                Puya::PY32F0xx_DFP@1.2.2
+                Puya PY32F0 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  C:/Arm/Packs/Puya/PY32F0xx_DFP/1.2.2/Drivers/CMSIS/Device/PY32F0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:41
+</pre>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"py32f0xx_ll_usart.h": "c",
+			"py32f030xx.h": "c",
+			"system_py32f030xx.h": "c",
+			"includes.h": "c",
+			"typedef.h": "c"
+		}
+	}
+}
