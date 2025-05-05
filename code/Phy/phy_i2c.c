@@ -12,38 +12,41 @@ __IO uint32_t State = I2C_STATE_READY;
 *******************************************************************************/
 void APP_ConfigI2cMaster(void)
 {
-  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+  /* 使能 GPIOA 的外设时钟 */
+  LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
 
-  LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOB);
+  /* 启用 I2C1 的外设时钟 */
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_I2C1);
 
   /* 将 SCL 引脚配置为：可选功能、高速、开漏、上拉 */
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_6;
+  LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
+  
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_9;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_OPENDRAIN;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
   GPIO_InitStruct.Alternate = LL_GPIO_AF_6;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* 将 SDA 引脚配置为：可选功能、高速、开漏、上拉 */
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_7;
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_10;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_ALTERNATE;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_OPENDRAIN;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
   GPIO_InitStruct.Alternate = LL_GPIO_AF_6;
-  LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
+  LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  
   /* 复位I2C */
   LL_APB1_GRP1_ForceReset(LL_APB1_GRP1_PERIPH_I2C1);
   LL_APB1_GRP1_ReleaseReset(LL_APB1_GRP1_PERIPH_I2C1);
-
+  
   /* I2C初始化 */
   LL_I2C_InitTypeDef I2C_InitStruct;
-  I2C_InitStruct.ClockSpeed = I2C_SPEEDCLOCK;
-  I2C_InitStruct.DutyCycle = LL_I2C_DUTYCYCLE_16_9;
-  I2C_InitStruct.OwnAddress1 = I2C_ADDRESS;
+  I2C_InitStruct.ClockSpeed      = I2C_SPEEDCLOCK;
+  I2C_InitStruct.DutyCycle       = LL_I2C_DUTYCYCLE_16_9;
+  I2C_InitStruct.OwnAddress1     = I2C_ADDRESS;
   I2C_InitStruct.TypeAcknowledge = LL_I2C_NACK;
   LL_I2C_Init(I2C1, &I2C_InitStruct);
 }
