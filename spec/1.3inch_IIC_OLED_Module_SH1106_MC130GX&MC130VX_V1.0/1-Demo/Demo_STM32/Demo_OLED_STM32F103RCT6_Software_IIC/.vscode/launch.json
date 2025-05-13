@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/JohnHu/Github_private/Pan7420_Kit/spec/1.3inch_IIC_OLED_Module_SH1106_MC130GX&MC130VX_V1.0/1-Demo/Demo_STM32/Demo_OLED_STM32F103RCT6_Software_IIC/USER",
+      "program": "d:/JohnHu/Github_private/Pan7420_Kit/spec/1.3inch_IIC_OLED_Module_SH1106_MC130GX&MC130VX_V1.0/1-Demo/Demo_STM32/Demo_OLED_STM32F103RCT6_Software_IIC/USER/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

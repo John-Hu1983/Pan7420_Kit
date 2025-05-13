@@ -1,0 +1,1698 @@
+Component: Arm Compiler for Embedded 6.23 Tool: armlink [5f102400]
+
+==============================================================================
+
+Section Cross References
+
+    system_py32f0xx.o(.text.SystemCoreClockUpdate) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    system_py32f0xx.o(.text.SystemCoreClockUpdate) refers to system_py32f0xx.o(.data.SystemCoreClock) for SystemCoreClock
+    system_py32f0xx.o(.text.SystemCoreClockUpdate) refers to system_py32f0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    system_py32f0xx.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_py32f0xx.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_py32f0xx.o(.ARM.exidx.text.SystemInit) refers to system_py32f0xx.o(.text.SystemInit) for [Anonymous Symbol]
+    system_py32f0xx.o(.text.$Sub$$main) refers to main.o(.text.main) for $Super$$main
+    system_py32f0xx.o(.text.$Sub$$main) refers to system_py32f0xx.o(.ARM.__at_0x20000000) for VECT_SRAM_TAB
+    system_py32f0xx.o(.ARM.exidx.text.$Sub$$main) refers to system_py32f0xx.o(.text.$Sub$$main) for [Anonymous Symbol]
+    startup_py32f030xx.o(RESET) refers to startup_py32f030xx.o(STACK) for __initial_sp
+    startup_py32f030xx.o(RESET) refers to startup_py32f030xx.o(.text) for Reset_Handler
+    startup_py32f030xx.o(RESET) refers to py32f0xx_it.o(.text.NMI_Handler) for NMI_Handler
+    startup_py32f030xx.o(RESET) refers to py32f0xx_it.o(.text.HardFault_Handler) for HardFault_Handler
+    startup_py32f030xx.o(RESET) refers to py32f0xx_it.o(.text.SVC_Handler) for SVC_Handler
+    startup_py32f030xx.o(RESET) refers to py32f0xx_it.o(.text.PendSV_Handler) for PendSV_Handler
+    startup_py32f030xx.o(RESET) refers to py32f0xx_it.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_py32f030xx.o(RESET) refers to py32f0xx_it.o(.text.TIM14_IRQHandler) for TIM14_IRQHandler
+    startup_py32f030xx.o(.text) refers to system_py32f0xx.o(.text.SystemInit) for SystemInit
+    startup_py32f030xx.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    py32f0xx_ll_utils.o(.text.LL_Init1msTick) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    py32f0xx_ll_utils.o(.ARM.exidx.text.LL_Init1msTick) refers to py32f0xx_ll_utils.o(.text.LL_Init1msTick) for [Anonymous Symbol]
+    py32f0xx_ll_utils.o(.ARM.exidx.text.LL_mDelay) refers to py32f0xx_ll_utils.o(.text.LL_mDelay) for [Anonymous Symbol]
+    py32f0xx_ll_utils.o(.text.LL_SetSystemCoreClock) refers to system_py32f0xx.o(.data.SystemCoreClock) for SystemCoreClock
+    py32f0xx_ll_utils.o(.ARM.exidx.text.LL_SetSystemCoreClock) refers to py32f0xx_ll_utils.o(.text.LL_SetSystemCoreClock) for [Anonymous Symbol]
+    py32f0xx_ll_utils.o(.text.LL_PLL_ConfigSystemClock_HSI) refers to py32f0xx_ll_utils.o(.text.UTILS_EnablePLLAndSwitchSystem) for UTILS_EnablePLLAndSwitchSystem
+    py32f0xx_ll_utils.o(.text.LL_PLL_ConfigSystemClock_HSI) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_utils.o(.ARM.exidx.text.LL_PLL_ConfigSystemClock_HSI) refers to py32f0xx_ll_utils.o(.text.LL_PLL_ConfigSystemClock_HSI) for [Anonymous Symbol]
+    py32f0xx_ll_utils.o(.text.UTILS_EnablePLLAndSwitchSystem) refers to system_py32f0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    py32f0xx_ll_utils.o(.text.UTILS_EnablePLLAndSwitchSystem) refers to system_py32f0xx.o(.data.SystemCoreClock) for SystemCoreClock
+    py32f0xx_ll_utils.o(.ARM.exidx.text.UTILS_EnablePLLAndSwitchSystem) refers to py32f0xx_ll_utils.o(.text.UTILS_EnablePLLAndSwitchSystem) for [Anonymous Symbol]
+    py32f0xx_ll_utils.o(.text.LL_PLL_ConfigSystemClock_HSE) refers to py32f0xx_ll_utils.o(.text.UTILS_EnablePLLAndSwitchSystem) for UTILS_EnablePLLAndSwitchSystem
+    py32f0xx_ll_utils.o(.ARM.exidx.text.LL_PLL_ConfigSystemClock_HSE) refers to py32f0xx_ll_utils.o(.text.LL_PLL_ConfigSystemClock_HSE) for [Anonymous Symbol]
+    py32f0xx_ll_utils.o(.ARM.exidx.text.LL_SetFlashLatency) refers to py32f0xx_ll_utils.o(.text.LL_SetFlashLatency) for [Anonymous Symbol]
+    py32f0xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_DeInit) refers to py32f0xx_ll_gpio.o(.text.LL_GPIO_DeInit) for [Anonymous Symbol]
+    py32f0xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_Init) refers to py32f0xx_ll_gpio.o(.text.LL_GPIO_Init) for [Anonymous Symbol]
+    py32f0xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_StructInit) refers to py32f0xx_ll_gpio.o(.text.LL_GPIO_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_led.o(.ARM.exidx.text.LL_LED_DeInit) refers to py32f0xx_ll_led.o(.text.LL_LED_DeInit) for [Anonymous Symbol]
+    py32f0xx_ll_led.o(.ARM.exidx.text.LL_LED_Init) refers to py32f0xx_ll_led.o(.text.LL_LED_Init) for [Anonymous Symbol]
+    py32f0xx_ll_led.o(.ARM.exidx.text.LL_LED_StructInit) refers to py32f0xx_ll_led.o(.text.LL_LED_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_dma.o(.ARM.exidx.text.LL_DMA_DeInit) refers to py32f0xx_ll_dma.o(.text.LL_DMA_DeInit) for [Anonymous Symbol]
+    py32f0xx_ll_dma.o(.ARM.exidx.text.LL_DMA_Init) refers to py32f0xx_ll_dma.o(.text.LL_DMA_Init) for [Anonymous Symbol]
+    py32f0xx_ll_dma.o(.text.LL_DMA_StructInit) refers to memseta.o(.text) for __aeabi_memclr4
+    py32f0xx_ll_dma.o(.ARM.exidx.text.LL_DMA_StructInit) refers to py32f0xx_ll_dma.o(.text.LL_DMA_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_DeInit) refers to py32f0xx_ll_usart.o(.text.LL_USART_DeInit) for [Anonymous Symbol]
+    py32f0xx_ll_usart.o(.text.LL_USART_Init) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq) for LL_RCC_GetSystemClocksFreq
+    py32f0xx_ll_usart.o(.text.LL_USART_Init) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_Init) refers to py32f0xx_ll_usart.o(.text.LL_USART_Init) for [Anonymous Symbol]
+    py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_StructInit) refers to py32f0xx_ll_usart.o(.text.LL_USART_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_ClockInit) refers to py32f0xx_ll_usart.o(.text.LL_USART_ClockInit) for [Anonymous Symbol]
+    py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_ClockStructInit) refers to py32f0xx_ll_usart.o(.text.LL_USART_ClockStructInit) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_DeInit) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_DeInit) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq) refers to system_py32f0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq) refers to system_py32f0xx.o(.rodata.APBPrescTable) for APBPrescTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetSystemClocksFreq) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.RCC_GetSystemClockFreq) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_GetSystemClockFreq) refers to py32f0xx_ll_rcc.o(.text.RCC_GetSystemClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.RCC_GetHCLKClockFreq) refers to system_py32f0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_GetHCLKClockFreq) refers to py32f0xx_ll_rcc.o(.text.RCC_GetHCLKClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.RCC_GetPCLK1ClockFreq) refers to system_py32f0xx.o(.rodata.APBPrescTable) for APBPrescTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_GetPCLK1ClockFreq) refers to py32f0xx_ll_rcc.o(.text.RCC_GetPCLK1ClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetMCOClockFreq) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetMCOClockFreq) refers to system_py32f0xx.o(.data.SystemCoreClock) for SystemCoreClock
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetMCOClockFreq) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetMCOClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.RCC_PLL_GetFreqDomain_SYS) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_PLL_GetFreqDomain_SYS) refers to py32f0xx_ll_rcc.o(.text.RCC_PLL_GetFreqDomain_SYS) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetLSCClockFreq) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetLSCClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetPVDClockFreq) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetPVDClockFreq) refers to system_py32f0xx.o(.rodata.APBPrescTable) for APBPrescTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetPVDClockFreq) refers to system_py32f0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetPVDClockFreq) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetPVDClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetCOMPClockFreq) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetCOMPClockFreq) refers to system_py32f0xx.o(.rodata.APBPrescTable) for APBPrescTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetCOMPClockFreq) refers to system_py32f0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetCOMPClockFreq) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetCOMPClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetLPTIMClockFreq) refers to system_py32f0xx.o(.rodata.HSIFreqTable) for HSIFreqTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetLPTIMClockFreq) refers to system_py32f0xx.o(.rodata.APBPrescTable) for APBPrescTable
+    py32f0xx_ll_rcc.o(.text.LL_RCC_GetLPTIMClockFreq) refers to system_py32f0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetLPTIMClockFreq) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetLPTIMClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetRTCClockFreq) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetRTCClockFreq) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_DeInit) refers to py32f0xx_ll_tim.o(.text.LL_TIM_DeInit) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_StructInit) refers to py32f0xx_ll_tim.o(.text.LL_TIM_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_Init) refers to py32f0xx_ll_tim.o(.text.LL_TIM_Init) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_StructInit) refers to py32f0xx_ll_tim.o(.text.LL_TIM_OC_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_Init) refers to py32f0xx_ll_tim.o(.text.LL_TIM_OC_Init) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_StructInit) refers to py32f0xx_ll_tim.o(.text.LL_TIM_IC_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_Init) refers to py32f0xx_ll_tim.o(.text.LL_TIM_IC_Init) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_StructInit) refers to py32f0xx_ll_tim.o(.text.LL_TIM_ENCODER_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_Init) refers to py32f0xx_ll_tim.o(.text.LL_TIM_ENCODER_Init) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_StructInit) refers to py32f0xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_Init) refers to py32f0xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_StructInit) refers to py32f0xx_ll_tim.o(.text.LL_TIM_BDTR_StructInit) for [Anonymous Symbol]
+    py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_Init) refers to py32f0xx_ll_tim.o(.text.LL_TIM_BDTR_Init) for [Anonymous Symbol]
+    py32f0xx_ll_i2c.o(.ARM.exidx.text.LL_I2C_DeInit) refers to py32f0xx_ll_i2c.o(.text.LL_I2C_DeInit) for [Anonymous Symbol]
+    py32f0xx_ll_i2c.o(.text.LL_I2C_Init) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq) for LL_RCC_GetSystemClocksFreq
+    py32f0xx_ll_i2c.o(.text.LL_I2C_Init) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    py32f0xx_ll_i2c.o(.ARM.exidx.text.LL_I2C_Init) refers to py32f0xx_ll_i2c.o(.text.LL_I2C_Init) for [Anonymous Symbol]
+    py32f0xx_ll_i2c.o(.ARM.exidx.text.LL_I2C_StructInit) refers to py32f0xx_ll_i2c.o(.text.LL_I2C_StructInit) for [Anonymous Symbol]
+    main.o(.text.main) refers to board.o(.text.init_board_global) for init_board_global
+    main.o(.text.main) refers to kernel.o(.text.open_app_process) for open_app_process
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    py32f0xx_it.o(.ARM.exidx.text.NMI_Handler) refers to py32f0xx_it.o(.text.NMI_Handler) for [Anonymous Symbol]
+    py32f0xx_it.o(.ARM.exidx.text.HardFault_Handler) refers to py32f0xx_it.o(.text.HardFault_Handler) for [Anonymous Symbol]
+    py32f0xx_it.o(.ARM.exidx.text.SVC_Handler) refers to py32f0xx_it.o(.text.SVC_Handler) for [Anonymous Symbol]
+    py32f0xx_it.o(.ARM.exidx.text.PendSV_Handler) refers to py32f0xx_it.o(.text.PendSV_Handler) for [Anonymous Symbol]
+    py32f0xx_it.o(.text.SysTick_Handler) refers to os_beason.o(.text.cb_systick_1ms) for cb_systick_1ms
+    py32f0xx_it.o(.ARM.exidx.text.SysTick_Handler) refers to py32f0xx_it.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    py32f0xx_it.o(.text.TIM14_IRQHandler) refers to phy_timer.o(.text.TIM14_UpdateCallback) for TIM14_UpdateCallback
+    py32f0xx_it.o(.ARM.exidx.text.TIM14_IRQHandler) refers to py32f0xx_it.o(.text.TIM14_IRQHandler) for [Anonymous Symbol]
+    board.o(.ARM.exidx.text.__delay_pan742) refers to board.o(.text.__delay_pan742) for [Anonymous Symbol]
+    board.o(.text.SystemClock_Config) refers to py32f0xx_ll_utils.o(.text.LL_Init1msTick) for LL_Init1msTick
+    board.o(.text.SystemClock_Config) refers to py32f0xx_ll_utils.o(.text.LL_SetSystemCoreClock) for LL_SetSystemCoreClock
+    board.o(.ARM.exidx.text.SystemClock_Config) refers to board.o(.text.SystemClock_Config) for [Anonymous Symbol]
+    board.o(.text.init_board_global) refers to py32f0xx_ll_utils.o(.text.LL_Init1msTick) for LL_Init1msTick
+    board.o(.text.init_board_global) refers to py32f0xx_ll_utils.o(.text.LL_SetSystemCoreClock) for LL_SetSystemCoreClock
+    board.o(.text.init_board_global) refers to os_beason.o(.text.open_systick_irq) for open_systick_irq
+    board.o(.ARM.exidx.text.init_board_global) refers to board.o(.text.init_board_global) for [Anonymous Symbol]
+    board.o(.ARM.exidx.text.Error_Handler) refers to board.o(.text.Error_Handler) for [Anonymous Symbol]
+    dev_leds.o(.text.init_leds_object) refers to phy_gpio.o(.text.configure_gpio_pattern) for configure_gpio_pattern
+    dev_leds.o(.ARM.exidx.text.init_leds_object) refers to dev_leds.o(.text.init_leds_object) for [Anonymous Symbol]
+    dev_leds.o(.text.control_leds_condition) refers to phy_gpio.o(.text.gpio_write_level) for gpio_write_level
+    dev_leds.o(.ARM.exidx.text.control_leds_condition) refers to dev_leds.o(.text.control_leds_condition) for [Anonymous Symbol]
+    phy_i2c.o(.text.APP_ConfigI2cMaster) refers to py32f0xx_ll_gpio.o(.text.LL_GPIO_Init) for LL_GPIO_Init
+    phy_i2c.o(.text.APP_ConfigI2cMaster) refers to py32f0xx_ll_i2c.o(.text.LL_I2C_Init) for LL_I2C_Init
+    phy_i2c.o(.ARM.exidx.text.APP_ConfigI2cMaster) refers to phy_i2c.o(.text.APP_ConfigI2cMaster) for [Anonymous Symbol]
+    phy_i2c.o(.text.APP_MasterTransmit) refers to phy_i2c.o(.bss.XferCount) for XferCount
+    phy_i2c.o(.text.APP_MasterTransmit) refers to phy_i2c.o(.bss.Devaddress) for Devaddress
+    phy_i2c.o(.text.APP_MasterTransmit) refers to phy_i2c.o(.bss.State) for State
+    phy_i2c.o(.text.APP_MasterTransmit) refers to phy_i2c.o(.bss.pBuffPtr) for pBuffPtr
+    phy_i2c.o(.ARM.exidx.text.APP_MasterTransmit) refers to phy_i2c.o(.text.APP_MasterTransmit) for [Anonymous Symbol]
+    phy_i2c.o(.text.APP_MasterReceive) refers to phy_i2c.o(.bss.XferCount) for XferCount
+    phy_i2c.o(.text.APP_MasterReceive) refers to phy_i2c.o(.bss.Devaddress) for Devaddress
+    phy_i2c.o(.text.APP_MasterReceive) refers to phy_i2c.o(.bss.State) for State
+    phy_i2c.o(.text.APP_MasterReceive) refers to phy_i2c.o(.bss.pBuffPtr) for pBuffPtr
+    phy_i2c.o(.ARM.exidx.text.APP_MasterReceive) refers to phy_i2c.o(.text.APP_MasterReceive) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_timer_init) refers to py32f0xx_ll_rcc.o(.text.LL_RCC_GetCOMPClockFreq) for LL_RCC_GetCOMPClockFreq
+    phy_timer.o(.text.bsp_timer_init) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    phy_timer.o(.text.bsp_timer_init) refers to py32f0xx_ll_tim.o(.text.LL_TIM_Init) for LL_TIM_Init
+    phy_timer.o(.text.bsp_timer_init) refers to phy_timer.o(.bss.s_t_tmr) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_timer_init) refers to phy_timer.o(.bss.sTimxHandle) for sTimxHandle
+    phy_timer.o(.text.bsp_timer_init) refers to phy_timer.o(.bss.g_uc_enable_systick_isr) for [Anonymous Symbol]
+    phy_timer.o(.ARM.exidx.text.bsp_timer_init) refers to phy_timer.o(.text.bsp_timer_init) for [Anonymous Symbol]
+    phy_timer.o(.text.SysTick_ISR) refers to phy_timer.o(.bss.s_ui_delay_count) for [Anonymous Symbol]
+    phy_timer.o(.text.SysTick_ISR) refers to phy_timer.o(.bss.s_uc_timeout_flag) for [Anonymous Symbol]
+    phy_timer.o(.text.SysTick_ISR) refers to phy_timer.o(.bss.s_t_tmr) for [Anonymous Symbol]
+    phy_timer.o(.text.SysTick_ISR) refers to phy_timer.o(.bss.g_i_run_time) for g_i_run_time
+    phy_timer.o(.text.SysTick_ISR) refers to phy_timer.o(.bss.SysTick_ISR.s_count) for [Anonymous Symbol]
+    phy_timer.o(.ARM.exidx.text.SysTick_ISR) refers to phy_timer.o(.text.SysTick_ISR) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_start_timer) refers to phy_timer.o(.bss.s_t_tmr) for [Anonymous Symbol]
+    phy_timer.o(.ARM.exidx.text.bsp_start_timer) refers to phy_timer.o(.text.bsp_start_timer) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_start_auto_timer) refers to phy_timer.o(.bss.s_t_tmr) for [Anonymous Symbol]
+    phy_timer.o(.ARM.exidx.text.bsp_start_auto_timer) refers to phy_timer.o(.text.bsp_start_auto_timer) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_stop_timer) refers to phy_timer.o(.bss.s_t_tmr) for [Anonymous Symbol]
+    phy_timer.o(.ARM.exidx.text.bsp_stop_timer) refers to phy_timer.o(.text.bsp_stop_timer) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_check_timer) refers to phy_timer.o(.bss.s_t_tmr) for [Anonymous Symbol]
+    phy_timer.o(.ARM.exidx.text.bsp_check_timer) refers to phy_timer.o(.text.bsp_check_timer) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_get_run_time) refers to phy_timer.o(.bss.g_i_run_time) for g_i_run_time
+    phy_timer.o(.ARM.exidx.text.bsp_get_run_time) refers to phy_timer.o(.text.bsp_get_run_time) for [Anonymous Symbol]
+    phy_timer.o(.text.bsp_check_run_Time) refers to phy_timer.o(.bss.g_i_run_time) for g_i_run_time
+    phy_timer.o(.ARM.exidx.text.bsp_check_run_Time) refers to phy_timer.o(.text.bsp_check_run_Time) for [Anonymous Symbol]
+    phy_timer.o(.text.TIM14_UpdateCallback) refers to phy_timer.o(.bss.g_uc_enable_systick_isr) for [Anonymous Symbol]
+    phy_timer.o(.text.TIM14_UpdateCallback) refers to phy_timer.o(.bss.s_ui_delay_count) for [Anonymous Symbol]
+    phy_timer.o(.text.TIM14_UpdateCallback) refers to phy_timer.o(.bss.s_uc_timeout_flag) for [Anonymous Symbol]
+    phy_timer.o(.text.TIM14_UpdateCallback) refers to phy_timer.o(.bss.s_t_tmr) for [Anonymous Symbol]
+    phy_timer.o(.text.TIM14_UpdateCallback) refers to phy_timer.o(.bss.g_i_run_time) for g_i_run_time
+    phy_timer.o(.text.TIM14_UpdateCallback) refers to phy_timer.o(.bss.SysTick_ISR.s_count) for [Anonymous Symbol]
+    phy_timer.o(.ARM.exidx.text.TIM14_UpdateCallback) refers to phy_timer.o(.text.TIM14_UpdateCallback) for [Anonymous Symbol]
+    phy_uart.o(.text.bsp_uart_init) refers to py32f0xx_ll_gpio.o(.text.LL_GPIO_Init) for LL_GPIO_Init
+    phy_uart.o(.text.bsp_uart_init) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    phy_uart.o(.text.bsp_uart_init) refers to system_py32f0xx.o(.data.SystemCoreClock) for SystemCoreClock
+    phy_uart.o(.ARM.exidx.text.bsp_uart_init) refers to phy_uart.o(.text.bsp_uart_init) for [Anonymous Symbol]
+    phy_uart.o(.ARM.exidx.text.bsp_uart_send) refers to phy_uart.o(.text.bsp_uart_send) for [Anonymous Symbol]
+    phy_uart.o(.ARM.exidx.text.bsp_uart_get_byte) refers to phy_uart.o(.text.bsp_uart_get_byte) for [Anonymous Symbol]
+    phy_uart.o(.ARM.exidx.text.fputc) refers to phy_uart.o(.text.fputc) for [Anonymous Symbol]
+    phy_gpio.o(.text.configure_gpio_pattern) refers to py32f0xx_ll_gpio.o(.text.LL_GPIO_Init) for LL_GPIO_Init
+    phy_gpio.o(.ARM.exidx.text.configure_gpio_pattern) refers to phy_gpio.o(.text.configure_gpio_pattern) for [Anonymous Symbol]
+    phy_gpio.o(.ARM.exidx.text.gpio_read_level) refers to phy_gpio.o(.text.gpio_read_level) for [Anonymous Symbol]
+    phy_gpio.o(.ARM.exidx.text.gpio_write_level) refers to phy_gpio.o(.text.gpio_write_level) for [Anonymous Symbol]
+    phy_gpio.o(.ARM.exidx.text.gpio_invert_level) refers to phy_gpio.o(.text.gpio_invert_level) for [Anonymous Symbol]
+    phy_watchdog.o(.ARM.exidx.text.WatchdogClear) refers to phy_watchdog.o(.text.WatchdogClear) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_write_reg) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_write_reg) refers to bsp_pn298.o(.text.bsp_pn298_write_reg) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_read_reg) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_read_reg) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_read_reg) refers to bsp_pn298.o(.text.bsp_pn298_read_reg) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_write_buf) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_write_buf) refers to bsp_pn298.o(.text.bsp_pn298_write_buf) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_read_buf) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_read_buf) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_read_buf) refers to bsp_pn298.o(.text.bsp_pn298_read_buf) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_ce_enable) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_ce_enable) refers to bsp_pn298.o(.text.bsp_pn298_ce_enable) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_ce_disable) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_ce_disable) refers to bsp_pn298.o(.text.bsp_pn298_ce_disable) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pan1026_get_status) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pan1026_get_status) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pan1026_get_status) refers to bsp_pn298.o(.text.bsp_pan1026_get_status) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_clear_status) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_clear_status) refers to bsp_pn298.o(.text.bsp_pn298_clear_status) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_flush_rx_fifo) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_flush_rx_fifo) refers to bsp_pn298.o(.text.bsp_pn298_flush_rx_fifo) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_flush_tx_fifo) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_flush_tx_fifo) refers to bsp_pn298.o(.text.bsp_pn298_flush_tx_fifo) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_clear_fifo) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_clear_fifo) refers to bsp_pn298.o(.text.bsp_pn298_clear_fifo) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_tx_mode) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_tx_mode) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_tx_mode) refers to bsp_pn298.o(.text.bsp_pn298_tx_mode) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_rx_mode) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_rx_mode) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_rx_mode) refers to bsp_pn298.o(.text.bsp_pn298_rx_mode) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_set_power) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_power) refers to bsp_pn298.o(.text.bsp_pn298_set_power) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_set_channel) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_channel) refers to bsp_pn298.o(.text.bsp_pn298_set_channel) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_set_mode) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_set_mode) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_mode) refers to bsp_pn298.o(.text.bsp_pn298_set_mode) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_set_addr) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_addr) refers to bsp_pn298.o(.text.bsp_pn298_set_addr) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_set_rx_payload_len) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_rx_payload_len) refers to bsp_pn298.o(.text.bsp_pn298_set_rx_payload_len) for [Anonymous Symbol]
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_byte_bit_decode) refers to bsp_pn298.o(.text.bsp_pn298_byte_bit_decode) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_tx_data) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_tx_data) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_tx_data) refers to bsp_pn298.o(.text.bsp_pn298_tx_data) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_tx_data_ack) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_tx_data_ack) refers to os_beason.o(.text.delay_ms) for delay_ms
+    bsp_pn298.o(.text.bsp_pn298_tx_data_ack) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.text.bsp_pn298_tx_data_ack) refers to printf1.o(i.__0printf$1) for __2printf
+    bsp_pn298.o(.text.bsp_pn298_tx_data_ack) refers to bsp_pn298.o(.bss.status) for status
+    bsp_pn298.o(.text.bsp_pn298_tx_data_ack) refers to bsp_pn298.o(.bss.cnt) for cnt
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_tx_data_ack) refers to bsp_pn298.o(.text.bsp_pn298_tx_data_ack) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_rx_data) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_rx_data) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_rx_data) refers to bsp_pn298.o(.text.bsp_pn298_rx_data) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_rx_data_ack_fix) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_rx_data_ack_fix) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_rx_data_ack_fix) refers to bsp_pn298.o(.text.bsp_pn298_rx_data_ack_fix) for [Anonymous Symbol]
+    bsp_pn298.o(.text.__bsp_pn298_1v8_reg_init) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.__bsp_pn298_1v8_reg_init) refers to bsp_pn298.o(.text.__bsp_pn298_1v8_reg_init) for [Anonymous Symbol]
+    bsp_pn298.o(.text.__bsp_pn298_init) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.__bsp_pn298_init) refers to os_beason.o(.text.delay_ms) for delay_ms
+    bsp_pn298.o(.text.__bsp_pn298_init) refers to bsp_pn298.o(.text.__bsp_pn298_1v8_reg_init) for __bsp_pn298_1v8_reg_init
+    bsp_pn298.o(.text.__bsp_pn298_init) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.text.__bsp_pn298_init) refers to bsp_pn298.o(.text.bsp_pn298_set_mode) for bsp_pn298_set_mode
+    bsp_pn298.o(.ARM.exidx.text.__bsp_pn298_init) refers to bsp_pn298.o(.text.__bsp_pn298_init) for [Anonymous Symbol]
+    bsp_pn298.o(.text.bsp_pn298_init) refers to bsp_pn298.o(.text.__bsp_pn298_init) for __bsp_pn298_init
+    bsp_pn298.o(.text.bsp_pn298_init) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.text.bsp_pn298_init) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for rfspi_pan742_read_byte
+    bsp_pn298.o(.ARM.exidx.text.bsp_pn298_init) refers to bsp_pn298.o(.text.bsp_pn298_init) for [Anonymous Symbol]
+    bsp_pn298.o(.text.pn298_carrier) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.pn298_carrier) refers to bsp_pn298.o(.text.pn298_carrier) for [Anonymous Symbol]
+    bsp_pn298.o(.text.pn298_deep_sleep) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for rfspi_pan742_write_byte
+    bsp_pn298.o(.ARM.exidx.text.pn298_deep_sleep) refers to bsp_pn298.o(.text.pn298_deep_sleep) for [Anonymous Symbol]
+    bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) refers to board.o(.text.__delay_pan742) for __delay_pan742
+    bsp_rfspi_sw.o(.ARM.exidx.text.rfspi_pan742_write_byte) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte) for [Anonymous Symbol]
+    bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) refers to board.o(.text.__delay_pan742) for __delay_pan742
+    bsp_rfspi_sw.o(.ARM.exidx.text.rfspi_pan742_read_byte) refers to bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte) for [Anonymous Symbol]
+    bsp_rfspi_sw.o(.text.bsp_rfspi_init) refers to py32f0xx_ll_gpio.o(.text.LL_GPIO_Init) for LL_GPIO_Init
+    bsp_rfspi_sw.o(.ARM.exidx.text.bsp_rfspi_init) refers to bsp_rfspi_sw.o(.text.bsp_rfspi_init) for [Anonymous Symbol]
+    kernel.o(.ARM.exidx.text.task_idle_process) refers to kernel.o(.text.task_idle_process) for [Anonymous Symbol]
+    kernel.o(.text.Callback_os_timer) refers to kernel.o(.data.APPS) for APPS
+    kernel.o(.ARM.exidx.text.Callback_os_timer) refers to kernel.o(.text.Callback_os_timer) for [Anonymous Symbol]
+    kernel.o(.text.open_app_process) refers to os_beason.o(.text.is_systick_opened) for is_systick_opened
+    kernel.o(.text.open_app_process) refers to os_beason.o(.text.delay_us) for delay_us
+    kernel.o(.text.open_app_process) refers to os_beason.o(.text.cb_systick_1ms) for cb_systick_1ms
+    kernel.o(.text.open_app_process) refers to kernel.o(.bss.open_app_process.tick_weak) for [Anonymous Symbol]
+    kernel.o(.text.open_app_process) refers to kernel.o(.data.APPS) for APPS
+    kernel.o(.ARM.exidx.text.open_app_process) refers to kernel.o(.text.open_app_process) for [Anonymous Symbol]
+    kernel.o(.data.APPS) refers to kernel.o(.text.task_idle_process) for task_idle_process
+    kernel.o(.data.APPS) refers to app_oled.o(.text.task_OLED_screen) for task_OLED_screen
+    kernel.o(.data.APPS) refers to app_leds.o(.text.task_leds_display) for task_leds_display
+    os_beason.o(.text.init_soft_link) refers to os_beason.o(.bss.tim_head) for tim_head
+    os_beason.o(.ARM.exidx.text.init_soft_link) refers to os_beason.o(.text.init_soft_link) for [Anonymous Symbol]
+    os_beason.o(.ARM.exidx.text.open_systick_irq) refers to os_beason.o(.text.open_systick_irq) for [Anonymous Symbol]
+    os_beason.o(.ARM.exidx.text.is_systick_opened) refers to os_beason.o(.text.is_systick_opened) for [Anonymous Symbol]
+    os_beason.o(.ARM.exidx.text.close_systick_irq) refers to os_beason.o(.text.close_systick_irq) for [Anonymous Symbol]
+    os_beason.o(.text.create_soft_timer) refers to os_beason.o(.bss.tim_head) for tim_head
+    os_beason.o(.ARM.exidx.text.create_soft_timer) refers to os_beason.o(.text.create_soft_timer) for [Anonymous Symbol]
+    os_beason.o(.text.cb_soft_timer) refers to os_beason.o(.bss.tim_head) for tim_head
+    os_beason.o(.ARM.exidx.text.cb_soft_timer) refers to os_beason.o(.text.cb_soft_timer) for [Anonymous Symbol]
+    os_beason.o(.text.cb_systick_1ms) refers to kernel.o(.text.Callback_os_timer) for Callback_os_timer
+    os_beason.o(.text.cb_systick_1ms) refers to os_beason.o(.bss.rt) for rt
+    os_beason.o(.text.cb_systick_1ms) refers to os_beason.o(.bss.tim_head) for tim_head
+    os_beason.o(.ARM.exidx.text.cb_systick_1ms) refers to os_beason.o(.text.cb_systick_1ms) for [Anonymous Symbol]
+    os_beason.o(.text.delay_us) refers to phy_watchdog.o(.text.WatchdogClear) for WatchdogClear
+    os_beason.o(.text.delay_us) refers to board.o(.text.__delay_pan742) for __delay_pan742
+    os_beason.o(.ARM.exidx.text.delay_us) refers to os_beason.o(.text.delay_us) for [Anonymous Symbol]
+    os_beason.o(.text.delay_ms) refers to phy_watchdog.o(.text.WatchdogClear) for WatchdogClear
+    os_beason.o(.text.delay_ms) refers to board.o(.text.__delay_pan742) for __delay_pan742
+    os_beason.o(.text.delay_ms) refers to os_beason.o(.bss.rt) for rt
+    os_beason.o(.ARM.exidx.text.delay_ms) refers to os_beason.o(.text.delay_ms) for [Anonymous Symbol]
+    app_leds.o(.text.set_led_patt) refers to app_leds.o(.bss.lamps) for lamps
+    app_leds.o(.ARM.exidx.text.set_led_patt) refers to app_leds.o(.text.set_led_patt) for [Anonymous Symbol]
+    app_leds.o(.text.perform_led_display) refers to dev_leds.o(.text.control_leds_condition) for control_leds_condition
+    app_leds.o(.text.perform_led_display) refers to app_leds.o(.bss.lamps) for lamps
+    app_leds.o(.ARM.exidx.text.perform_led_display) refers to app_leds.o(.text.perform_led_display) for [Anonymous Symbol]
+    app_leds.o(.text.task_leds_display) refers to app_leds.o(.text.perform_led_display) for perform_led_display
+    app_leds.o(.text.task_leds_display) refers to dev_leds.o(.text.init_leds_object) for init_leds_object
+    app_leds.o(.text.task_leds_display) refers to app_leds.o(.bss.schedule.0) for [Anonymous Symbol]
+    app_leds.o(.text.task_leds_display) refers to app_leds.o(.bss.schedule.1) for [Anonymous Symbol]
+    app_leds.o(.text.task_leds_display) refers to app_leds.o(.bss.lamps) for lamps
+    app_leds.o(.ARM.exidx.text.task_leds_display) refers to app_leds.o(.text.task_leds_display) for [Anonymous Symbol]
+    app_oled.o(.text.task_OLED_screen) refers to oled.o(.text.OLED_Init) for OLED_Init
+    app_oled.o(.text.task_OLED_screen) refers to phy_i2c.o(.text.APP_MasterTransmit) for APP_MasterTransmit
+    app_oled.o(.text.task_OLED_screen) refers to phy_i2c.o(.text.APP_MasterReceive) for APP_MasterReceive
+    app_oled.o(.text.task_OLED_screen) refers to app_oled.o(.bss.schedule.0) for [Anonymous Symbol]
+    app_oled.o(.text.task_OLED_screen) refers to app_oled.o(.data.aTxBuffer) for aTxBuffer
+    app_oled.o(.text.task_OLED_screen) refers to phy_i2c.o(.bss.State) for State
+    app_oled.o(.text.task_OLED_screen) refers to app_oled.o(.bss.aRxBuffer) for aRxBuffer
+    app_oled.o(.ARM.exidx.text.task_OLED_screen) refers to app_oled.o(.text.task_OLED_screen) for [Anonymous Symbol]
+    oled.o(.text.OLED_WR_Byte) refers to oled_rdwr.o(.text.Write_IIC_Data) for Write_IIC_Data
+    oled.o(.text.OLED_WR_Byte) refers to oled_rdwr.o(.text.Write_IIC_Command) for Write_IIC_Command
+    oled.o(.ARM.exidx.text.OLED_WR_Byte) refers to oled.o(.text.OLED_WR_Byte) for [Anonymous Symbol]
+    oled.o(.text.OLED_Set_Pos) refers to oled_rdwr.o(.text.Write_IIC_Command) for Write_IIC_Command
+    oled.o(.ARM.exidx.text.OLED_Set_Pos) refers to oled.o(.text.OLED_Set_Pos) for [Anonymous Symbol]
+    oled.o(.text.OLED_Display_On) refers to oled_rdwr.o(.text.Write_IIC_Command) for Write_IIC_Command
+    oled.o(.ARM.exidx.text.OLED_Display_On) refers to oled.o(.text.OLED_Display_On) for [Anonymous Symbol]
+    oled.o(.text.OLED_Display_Off) refers to oled_rdwr.o(.text.Write_IIC_Command) for Write_IIC_Command
+    oled.o(.ARM.exidx.text.OLED_Display_Off) refers to oled.o(.text.OLED_Display_Off) for [Anonymous Symbol]
+    oled.o(.text.OLED_Set_Pixel) refers to oled.o(.bss.OLED_buffer) for [Anonymous Symbol]
+    oled.o(.ARM.exidx.text.OLED_Set_Pixel) refers to oled.o(.text.OLED_Set_Pixel) for [Anonymous Symbol]
+    oled.o(.text.OLED_Display) refers to oled_rdwr.o(.text.Write_IIC_Command) for Write_IIC_Command
+    oled.o(.text.OLED_Display) refers to oled_rdwr.o(.text.Write_IIC_Data) for Write_IIC_Data
+    oled.o(.text.OLED_Display) refers to oled.o(.bss.OLED_buffer) for [Anonymous Symbol]
+    oled.o(.ARM.exidx.text.OLED_Display) refers to oled.o(.text.OLED_Display) for [Anonymous Symbol]
+    oled.o(.text.OLED_Clear) refers to memseta.o(.text) for __aeabi_memset4
+    oled.o(.text.OLED_Clear) refers to oled_rdwr.o(.text.Write_IIC_Command) for Write_IIC_Command
+    oled.o(.text.OLED_Clear) refers to oled_rdwr.o(.text.Write_IIC_Data) for Write_IIC_Data
+    oled.o(.text.OLED_Clear) refers to oled.o(.bss.OLED_buffer) for [Anonymous Symbol]
+    oled.o(.ARM.exidx.text.OLED_Clear) refers to oled.o(.text.OLED_Clear) for [Anonymous Symbol]
+    oled.o(.text.OLED_Init_GPIO) refers to phy_i2c.o(.text.APP_ConfigI2cMaster) for APP_ConfigI2cMaster
+    oled.o(.ARM.exidx.text.OLED_Init_GPIO) refers to oled.o(.text.OLED_Init_GPIO) for [Anonymous Symbol]
+    oled.o(.text.OLED_Init) refers to memseta.o(.text) for __aeabi_memclr4
+    oled.o(.text.OLED_Init) refers to phy_i2c.o(.text.APP_ConfigI2cMaster) for APP_ConfigI2cMaster
+    oled.o(.text.OLED_Init) refers to os_beason.o(.text.delay_ms) for delay_ms
+    oled.o(.text.OLED_Init) refers to oled.o(.bss.OLED_buffer) for [Anonymous Symbol]
+    oled.o(.ARM.exidx.text.OLED_Init) refers to oled.o(.text.OLED_Init) for [Anonymous Symbol]
+    oled_rdwr.o(.text.Write_IIC_Command) refers to phy_i2c.o(.text.APP_MasterTransmit) for APP_MasterTransmit
+    oled_rdwr.o(.text.Write_IIC_Command) refers to phy_i2c.o(.bss.State) for State
+    oled_rdwr.o(.ARM.exidx.text.Write_IIC_Command) refers to oled_rdwr.o(.text.Write_IIC_Command) for [Anonymous Symbol]
+    oled_rdwr.o(.text.Write_IIC_Data) refers to phy_i2c.o(.text.APP_MasterTransmit) for APP_MasterTransmit
+    oled_rdwr.o(.text.Write_IIC_Data) refers to phy_i2c.o(.bss.State) for State
+    oled_rdwr.o(.ARM.exidx.text.Write_IIC_Data) refers to oled_rdwr.o(.text.Write_IIC_Data) for [Anonymous Symbol]
+    gui.o(.text.GUI_DrawPoint) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.text.GUI_DrawPoint) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_DrawPoint) refers to gui.o(.text.GUI_DrawPoint) for [Anonymous Symbol]
+    gui.o(.text.GUI_Fill) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.text.GUI_Fill) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.ARM.exidx.text.GUI_Fill) refers to gui.o(.text.GUI_Fill) for [Anonymous Symbol]
+    gui.o(.text.GUI_DrawLine) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.text.GUI_DrawLine) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_DrawLine) refers to gui.o(.text.GUI_DrawLine) for [Anonymous Symbol]
+    gui.o(.text.GUI_DrawRectangle) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.text.GUI_DrawRectangle) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_DrawRectangle) refers to gui.o(.text.GUI_DrawRectangle) for [Anonymous Symbol]
+    gui.o(.text.GUI_FillRectangle) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.text.GUI_FillRectangle) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.ARM.exidx.text.GUI_FillRectangle) refers to gui.o(.text.GUI_FillRectangle) for [Anonymous Symbol]
+    gui.o(.text.GUI_DrawCircle) refers to gui.o(.text._draw_circle_8) for _draw_circle_8
+    gui.o(.text.GUI_DrawCircle) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_DrawCircle) refers to gui.o(.text.GUI_DrawCircle) for [Anonymous Symbol]
+    gui.o(.text._draw_circle_8) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.ARM.exidx.text._draw_circle_8) refers to gui.o(.text._draw_circle_8) for [Anonymous Symbol]
+    gui.o(.text.GUI_FillCircle) refers to gui.o(.text._draw_circle_8) for _draw_circle_8
+    gui.o(.text.GUI_FillCircle) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_FillCircle) refers to gui.o(.text.GUI_FillCircle) for [Anonymous Symbol]
+    gui.o(.text.GUI_DrawTriangel) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.text.GUI_DrawTriangel) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_DrawTriangel) refers to gui.o(.text.GUI_DrawTriangel) for [Anonymous Symbol]
+    gui.o(.text.GUI_FillTriangel) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.text.GUI_FillTriangel) refers to idiv_div0.o(.text) for __aeabi_idiv
+    gui.o(.text.GUI_FillTriangel) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_FillTriangel) refers to gui.o(.text.GUI_FillTriangel) for [Anonymous Symbol]
+    gui.o(.text.GUI_ShowChar) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.text.GUI_ShowChar) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.text.GUI_ShowChar) refers to oledfont.o(.rodata.F6x8) for F6x8
+    gui.o(.text.GUI_ShowChar) refers to oledfont.o(.rodata.F8X16) for F8X16
+    gui.o(.ARM.exidx.text.GUI_ShowChar) refers to gui.o(.text.GUI_ShowChar) for [Anonymous Symbol]
+    gui.o(.text.GUI_ShowString) refers to gui.o(.text.GUI_ShowChar) for GUI_ShowChar
+    gui.o(.ARM.exidx.text.GUI_ShowString) refers to gui.o(.text.GUI_ShowString) for [Anonymous Symbol]
+    gui.o(.text.GUI_ShowNum) refers to gui.o(.text.GUI_ShowChar) for GUI_ShowChar
+    gui.o(.text.GUI_ShowNum) refers to uidiv_div0.o(.text) for __aeabi_uidiv
+    gui.o(.ARM.exidx.text.GUI_ShowNum) refers to gui.o(.text.GUI_ShowNum) for [Anonymous Symbol]
+    gui.o(.text.GUI_ShowFont16) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_ShowFont16) refers to gui.o(.text.GUI_ShowFont16) for [Anonymous Symbol]
+    gui.o(.text.GUI_ShowFont24) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_ShowFont24) refers to gui.o(.text.GUI_ShowFont24) for [Anonymous Symbol]
+    gui.o(.text.GUI_ShowFont32) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_ShowFont32) refers to gui.o(.text.GUI_ShowFont32) for [Anonymous Symbol]
+    gui.o(.text.GUI_ShowCHinese) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_ShowCHinese) refers to gui.o(.text.GUI_ShowCHinese) for [Anonymous Symbol]
+    gui.o(.text.GUI_DrawBMP) refers to oled.o(.text.OLED_Set_Pixel) for OLED_Set_Pixel
+    gui.o(.text.GUI_DrawBMP) refers to oled.o(.text.OLED_Display) for OLED_Display
+    gui.o(.ARM.exidx.text.GUI_DrawBMP) refers to gui.o(.text.GUI_DrawBMP) for [Anonymous Symbol]
+    test.o(.text.TEST_MainPage) refers to gui.o(.text.GUI_ShowString) for GUI_ShowString
+    test.o(.text.TEST_MainPage) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.ARM.exidx.text.TEST_MainPage) refers to test.o(.text.TEST_MainPage) for [Anonymous Symbol]
+    test.o(.text.Test_Color) refers to gui.o(.text.GUI_Fill) for GUI_Fill
+    test.o(.text.Test_Color) refers to gui.o(.text.GUI_ShowString) for GUI_ShowString
+    test.o(.text.Test_Color) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.ARM.exidx.text.Test_Color) refers to test.o(.text.Test_Color) for [Anonymous Symbol]
+    test.o(.text.Test_Rectangular) refers to gui.o(.text.GUI_Fill) for GUI_Fill
+    test.o(.text.Test_Rectangular) refers to gui.o(.text.GUI_DrawRectangle) for GUI_DrawRectangle
+    test.o(.text.Test_Rectangular) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.Test_Rectangular) refers to gui.o(.text.GUI_FillRectangle) for GUI_FillRectangle
+    test.o(.ARM.exidx.text.Test_Rectangular) refers to test.o(.text.Test_Rectangular) for [Anonymous Symbol]
+    test.o(.text.Test_Circle) refers to gui.o(.text.GUI_Fill) for GUI_Fill
+    test.o(.text.Test_Circle) refers to gui.o(.text.GUI_DrawCircle) for GUI_DrawCircle
+    test.o(.text.Test_Circle) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.Test_Circle) refers to gui.o(.text.GUI_FillCircle) for GUI_FillCircle
+    test.o(.ARM.exidx.text.Test_Circle) refers to test.o(.text.Test_Circle) for [Anonymous Symbol]
+    test.o(.text.Test_Triangle) refers to gui.o(.text.GUI_Fill) for GUI_Fill
+    test.o(.text.Test_Triangle) refers to gui.o(.text.GUI_DrawTriangel) for GUI_DrawTriangel
+    test.o(.text.Test_Triangle) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.Test_Triangle) refers to gui.o(.text.GUI_FillTriangel) for GUI_FillTriangel
+    test.o(.ARM.exidx.text.Test_Triangle) refers to test.o(.text.Test_Triangle) for [Anonymous Symbol]
+    test.o(.text.TEST_English) refers to gui.o(.text.GUI_ShowString) for GUI_ShowString
+    test.o(.text.TEST_English) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.ARM.exidx.text.TEST_English) refers to test.o(.text.TEST_English) for [Anonymous Symbol]
+    test.o(.text.TEST_Number_Character) refers to gui.o(.text.GUI_Fill) for GUI_Fill
+    test.o(.text.TEST_Number_Character) refers to gui.o(.text.GUI_ShowString) for GUI_ShowString
+    test.o(.text.TEST_Number_Character) refers to gui.o(.text.GUI_ShowNum) for GUI_ShowNum
+    test.o(.text.TEST_Number_Character) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.TEST_Number_Character) refers to oled.o(.text.OLED_Clear) for OLED_Clear
+    test.o(.ARM.exidx.text.TEST_Number_Character) refers to test.o(.text.TEST_Number_Character) for [Anonymous Symbol]
+    test.o(.text.TEST_Chinese) refers to gui.o(.text.GUI_ShowString) for GUI_ShowString
+    test.o(.text.TEST_Chinese) refers to gui.o(.text.GUI_ShowCHinese) for GUI_ShowCHinese
+    test.o(.text.TEST_Chinese) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.TEST_Chinese) refers to oled.o(.text.OLED_Clear) for OLED_Clear
+    test.o(.text.TEST_Chinese) refers to test.o(.rodata.str1.1) for [Anonymous Symbol]
+    test.o(.ARM.exidx.text.TEST_Chinese) refers to test.o(.text.TEST_Chinese) for [Anonymous Symbol]
+    test.o(.text.TEST_BMP) refers to gui.o(.text.GUI_DrawBMP) for GUI_DrawBMP
+    test.o(.text.TEST_BMP) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.TEST_BMP) refers to bmp.o(.rodata.BMP2) for BMP2
+    test.o(.text.TEST_BMP) refers to bmp.o(.rodata.BMP3) for BMP3
+    test.o(.text.TEST_BMP) refers to bmp.o(.rodata.BMP4) for BMP4
+    test.o(.ARM.exidx.text.TEST_BMP) refers to test.o(.text.TEST_BMP) for [Anonymous Symbol]
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_Fill) for GUI_Fill
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_ShowCHinese) for GUI_ShowCHinese
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_DrawCircle) for GUI_DrawCircle
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_ShowString) for GUI_ShowString
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_DrawRectangle) for GUI_DrawRectangle
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_DrawLine) for GUI_DrawLine
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_FillTriangel) for GUI_FillTriangel
+    test.o(.text.TEST_Menu1) refers to gui.o(.text.GUI_FillCircle) for GUI_FillCircle
+    test.o(.text.TEST_Menu1) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.TEST_Menu1) refers to test.o(.rodata.str1.1) for [Anonymous Symbol]
+    test.o(.ARM.exidx.text.TEST_Menu1) refers to test.o(.text.TEST_Menu1) for [Anonymous Symbol]
+    test.o(.text.TEST_Menu2) refers to rand.o(.text) for srand
+    test.o(.text.TEST_Menu2) refers to gui.o(.text.GUI_DrawLine) for GUI_DrawLine
+    test.o(.text.TEST_Menu2) refers to gui.o(.text.GUI_ShowString) for GUI_ShowString
+    test.o(.text.TEST_Menu2) refers to gui.o(.text.GUI_DrawCircle) for GUI_DrawCircle
+    test.o(.text.TEST_Menu2) refers to gui.o(.text.GUI_DrawBMP) for GUI_DrawBMP
+    test.o(.text.TEST_Menu2) refers to gui.o(.text.GUI_ShowNum) for GUI_ShowNum
+    test.o(.text.TEST_Menu2) refers to idiv_div0.o(.text) for __aeabi_idivmod
+    test.o(.text.TEST_Menu2) refers to os_beason.o(.text.delay_ms) for delay_ms
+    test.o(.text.TEST_Menu2) refers to bmp.o(.rodata.BMP5) for BMP5
+    test.o(.ARM.exidx.text.TEST_Menu2) refers to test.o(.text.TEST_Menu2) for [Anonymous Symbol]
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    idiv.o(.text) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    rand.o(.text) refers to rand.o(.data) for .data
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to phy_uart.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to phy_uart.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to phy_uart.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to phy_uart.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to phy_uart.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to phy_uart.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to phy_uart.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to phy_uart.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to phy_uart.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to phy_uart.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to phy_uart.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to phy_uart.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to phy_uart.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to phy_uart.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to phy_uart.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to phy_uart.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to phy_uart.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to phy_uart.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to phy_uart.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to phy_uart.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to phy_uart.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to phy_uart.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to phy_uart.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to phy_uart.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to phy_uart.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to phy_uart.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to phy_uart.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to phy_uart.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to phy_uart.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to phy_uart.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to phy_uart.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to phy_uart.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf6.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to phy_uart.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to phy_uart.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to phy_uart.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to phy_uart.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to phy_uart.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to phy_uart.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to phy_uart.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to phy_uart.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to phy_uart.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to phy_uart.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to phy_uart.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to phy_uart.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_py32f030xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_py32f030xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to system_py32f0xx.o(.text.$Sub$$main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to system_py32f0xx.o(.text.$Sub$$main) for main
+    idiv_div0.o(.text) refers to uidiv_div0.o(.text) for __aeabi_uidivmod
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to depilogue.o(i.__ARM_clz) for __ARM_clz
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    depilogue.o(i.__ARM_clz) refers (Special) to iusefp.o(.text) for __I$use$fp
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_py32f0xx.o(.text), (0 bytes).
+    Removing system_py32f0xx.o(.text.SystemCoreClockUpdate), (128 bytes).
+    Removing system_py32f0xx.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_py32f0xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_py32f0xx.o(.ARM.exidx.text.$Sub$$main), (8 bytes).
+    Removing startup_py32f030xx.o(HEAP), (0 bytes).
+    Removing py32f0xx_ll_utils.o(.text), (0 bytes).
+    Removing py32f0xx_ll_utils.o(.ARM.exidx.text.LL_Init1msTick), (8 bytes).
+    Removing py32f0xx_ll_utils.o(.text.LL_mDelay), (36 bytes).
+    Removing py32f0xx_ll_utils.o(.ARM.exidx.text.LL_mDelay), (8 bytes).
+    Removing py32f0xx_ll_utils.o(.ARM.exidx.text.LL_SetSystemCoreClock), (8 bytes).
+    Removing py32f0xx_ll_utils.o(.text.LL_PLL_ConfigSystemClock_HSI), (108 bytes).
+    Removing py32f0xx_ll_utils.o(.ARM.exidx.text.LL_PLL_ConfigSystemClock_HSI), (8 bytes).
+    Removing py32f0xx_ll_utils.o(.text.UTILS_EnablePLLAndSwitchSystem), (268 bytes).
+    Removing py32f0xx_ll_utils.o(.ARM.exidx.text.UTILS_EnablePLLAndSwitchSystem), (8 bytes).
+    Removing py32f0xx_ll_utils.o(.text.LL_PLL_ConfigSystemClock_HSE), (108 bytes).
+    Removing py32f0xx_ll_utils.o(.ARM.exidx.text.LL_PLL_ConfigSystemClock_HSE), (8 bytes).
+    Removing py32f0xx_ll_utils.o(.text.LL_SetFlashLatency), (72 bytes).
+    Removing py32f0xx_ll_utils.o(.ARM.exidx.text.LL_SetFlashLatency), (8 bytes).
+    Removing py32f0xx_ll_gpio.o(.text), (0 bytes).
+    Removing py32f0xx_ll_gpio.o(.text.LL_GPIO_DeInit), (72 bytes).
+    Removing py32f0xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_DeInit), (8 bytes).
+    Removing py32f0xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_Init), (8 bytes).
+    Removing py32f0xx_ll_gpio.o(.text.LL_GPIO_StructInit), (24 bytes).
+    Removing py32f0xx_ll_gpio.o(.ARM.exidx.text.LL_GPIO_StructInit), (8 bytes).
+    Removing py32f0xx_ll_led.o(.text), (0 bytes).
+    Removing py32f0xx_ll_led.o(.text.LL_LED_DeInit), (40 bytes).
+    Removing py32f0xx_ll_led.o(.ARM.exidx.text.LL_LED_DeInit), (8 bytes).
+    Removing py32f0xx_ll_led.o(.text.LL_LED_Init), (68 bytes).
+    Removing py32f0xx_ll_led.o(.ARM.exidx.text.LL_LED_Init), (8 bytes).
+    Removing py32f0xx_ll_led.o(.text.LL_LED_StructInit), (14 bytes).
+    Removing py32f0xx_ll_led.o(.ARM.exidx.text.LL_LED_StructInit), (8 bytes).
+    Removing py32f0xx_ll_dma.o(.text), (0 bytes).
+    Removing py32f0xx_ll_dma.o(.text.LL_DMA_DeInit), (128 bytes).
+    Removing py32f0xx_ll_dma.o(.ARM.exidx.text.LL_DMA_DeInit), (8 bytes).
+    Removing py32f0xx_ll_dma.o(.text.LL_DMA_Init), (84 bytes).
+    Removing py32f0xx_ll_dma.o(.ARM.exidx.text.LL_DMA_Init), (8 bytes).
+    Removing py32f0xx_ll_dma.o(.text.LL_DMA_StructInit), (10 bytes).
+    Removing py32f0xx_ll_dma.o(.ARM.exidx.text.LL_DMA_StructInit), (8 bytes).
+    Removing py32f0xx_ll_usart.o(.text), (0 bytes).
+    Removing py32f0xx_ll_usart.o(.text.LL_USART_DeInit), (72 bytes).
+    Removing py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_DeInit), (8 bytes).
+    Removing py32f0xx_ll_usart.o(.text.LL_USART_Init), (240 bytes).
+    Removing py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_Init), (8 bytes).
+    Removing py32f0xx_ll_usart.o(.text.LL_USART_StructInit), (24 bytes).
+    Removing py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_StructInit), (8 bytes).
+    Removing py32f0xx_ll_usart.o(.text.LL_USART_ClockInit), (58 bytes).
+    Removing py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_ClockInit), (8 bytes).
+    Removing py32f0xx_ll_usart.o(.text.LL_USART_ClockStructInit), (12 bytes).
+    Removing py32f0xx_ll_usart.o(.ARM.exidx.text.LL_USART_ClockStructInit), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text), (0 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.LL_RCC_DeInit), (96 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_DeInit), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetSystemClocksFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.RCC_GetSystemClockFreq), (88 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_GetSystemClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.RCC_GetHCLKClockFreq), (32 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_GetHCLKClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.RCC_GetPCLK1ClockFreq), (32 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_GetPCLK1ClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.LL_RCC_GetMCOClockFreq), (140 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetMCOClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.RCC_PLL_GetFreqDomain_SYS), (40 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.RCC_PLL_GetFreqDomain_SYS), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.LL_RCC_GetLSCClockFreq), (28 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetLSCClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.LL_RCC_GetPVDClockFreq), (164 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetPVDClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.LL_RCC_GetCOMPClockFreq), (204 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetCOMPClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.LL_RCC_GetLPTIMClockFreq), (188 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetLPTIMClockFreq), (8 bytes).
+    Removing py32f0xx_ll_rcc.o(.text.LL_RCC_GetRTCClockFreq), (60 bytes).
+    Removing py32f0xx_ll_rcc.o(.ARM.exidx.text.LL_RCC_GetRTCClockFreq), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text), (0 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_DeInit), (132 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_DeInit), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_StructInit), (16 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_StructInit), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_Init), (144 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_Init), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_OC_StructInit), (20 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_StructInit), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_OC_Init), (532 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_OC_Init), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_IC_StructInit), (14 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_StructInit), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_IC_Init), (216 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_IC_Init), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_ENCODER_StructInit), (26 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_StructInit), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_ENCODER_Init), (88 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_ENCODER_Init), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_StructInit), (12 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_StructInit), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_HALLSENSOR_Init), (88 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_HALLSENSOR_Init), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_BDTR_StructInit), (18 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_StructInit), (8 bytes).
+    Removing py32f0xx_ll_tim.o(.text.LL_TIM_BDTR_Init), (64 bytes).
+    Removing py32f0xx_ll_tim.o(.ARM.exidx.text.LL_TIM_BDTR_Init), (8 bytes).
+    Removing py32f0xx_ll_i2c.o(.text), (0 bytes).
+    Removing py32f0xx_ll_i2c.o(.text.LL_I2C_DeInit), (40 bytes).
+    Removing py32f0xx_ll_i2c.o(.ARM.exidx.text.LL_I2C_DeInit), (8 bytes).
+    Removing py32f0xx_ll_i2c.o(.ARM.exidx.text.LL_I2C_Init), (8 bytes).
+    Removing py32f0xx_ll_i2c.o(.text.LL_I2C_StructInit), (20 bytes).
+    Removing py32f0xx_ll_i2c.o(.ARM.exidx.text.LL_I2C_StructInit), (8 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing py32f0xx_it.o(.text), (0 bytes).
+    Removing py32f0xx_it.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
+    Removing py32f0xx_it.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
+    Removing py32f0xx_it.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
+    Removing py32f0xx_it.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
+    Removing py32f0xx_it.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing py32f0xx_it.o(.ARM.exidx.text.TIM14_IRQHandler), (8 bytes).
+    Removing board.o(.text), (0 bytes).
+    Removing board.o(.ARM.exidx.text.__delay_pan742), (8 bytes).
+    Removing board.o(.text.SystemClock_Config), (84 bytes).
+    Removing board.o(.ARM.exidx.text.SystemClock_Config), (8 bytes).
+    Removing board.o(.ARM.exidx.text.init_board_global), (8 bytes).
+    Removing board.o(.text.Error_Handler), (2 bytes).
+    Removing board.o(.ARM.exidx.text.Error_Handler), (8 bytes).
+    Removing board.o(.bss.UTILS_ClkInitStruct), (8 bytes).
+    Removing dev_leds.o(.text), (0 bytes).
+    Removing dev_leds.o(.ARM.exidx.text.init_leds_object), (8 bytes).
+    Removing dev_leds.o(.ARM.exidx.text.control_leds_condition), (8 bytes).
+    Removing dev_leds.o(.rodata.LED1), (8 bytes).
+    Removing dev_leds.o(.rodata.LED2), (8 bytes).
+    Removing phy_i2c.o(.text), (0 bytes).
+    Removing phy_i2c.o(.ARM.exidx.text.APP_ConfigI2cMaster), (8 bytes).
+    Removing phy_i2c.o(.ARM.exidx.text.APP_MasterTransmit), (8 bytes).
+    Removing phy_i2c.o(.ARM.exidx.text.APP_MasterReceive), (8 bytes).
+    Removing phy_timer.o(.text), (0 bytes).
+    Removing phy_timer.o(.text.bsp_timer_init), (136 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.bsp_timer_init), (8 bytes).
+    Removing phy_timer.o(.text.SysTick_ISR), (128 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.SysTick_ISR), (8 bytes).
+    Removing phy_timer.o(.text.bsp_start_timer), (40 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.bsp_start_timer), (8 bytes).
+    Removing phy_timer.o(.text.bsp_start_auto_timer), (44 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.bsp_start_auto_timer), (8 bytes).
+    Removing phy_timer.o(.text.bsp_stop_timer), (40 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.bsp_stop_timer), (8 bytes).
+    Removing phy_timer.o(.text.bsp_check_timer), (36 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.bsp_check_timer), (8 bytes).
+    Removing phy_timer.o(.text.bsp_get_run_time), (24 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.bsp_get_run_time), (8 bytes).
+    Removing phy_timer.o(.text.bsp_check_run_Time), (36 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.bsp_check_run_Time), (8 bytes).
+    Removing phy_timer.o(.ARM.exidx.text.TIM14_UpdateCallback), (8 bytes).
+    Removing phy_timer.o(.bss.sTimxHandle), (20 bytes).
+    Removing phy_uart.o(.text), (0 bytes).
+    Removing phy_uart.o(.text.bsp_uart_init), (236 bytes).
+    Removing phy_uart.o(.ARM.exidx.text.bsp_uart_init), (8 bytes).
+    Removing phy_uart.o(.text.bsp_uart_send), (24 bytes).
+    Removing phy_uart.o(.ARM.exidx.text.bsp_uart_send), (8 bytes).
+    Removing phy_uart.o(.text.bsp_uart_get_byte), (24 bytes).
+    Removing phy_uart.o(.ARM.exidx.text.bsp_uart_get_byte), (8 bytes).
+    Removing phy_uart.o(.text.fputc), (24 bytes).
+    Removing phy_uart.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing phy_uart.o(.bss.USART_InitStruct), (28 bytes).
+    Removing phy_gpio.o(.text), (0 bytes).
+    Removing phy_gpio.o(.ARM.exidx.text.configure_gpio_pattern), (8 bytes).
+    Removing phy_gpio.o(.text.gpio_read_level), (10 bytes).
+    Removing phy_gpio.o(.ARM.exidx.text.gpio_read_level), (8 bytes).
+    Removing phy_gpio.o(.ARM.exidx.text.gpio_write_level), (8 bytes).
+    Removing phy_gpio.o(.text.gpio_invert_level), (12 bytes).
+    Removing phy_gpio.o(.ARM.exidx.text.gpio_invert_level), (8 bytes).
+    Removing phy_watchdog.o(.text), (0 bytes).
+    Removing phy_watchdog.o(.ARM.exidx.text.WatchdogClear), (8 bytes).
+    Removing bsp_pn298.o(.text), (0 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_write_reg), (28 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_write_reg), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_read_reg), (24 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_read_reg), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_write_buf), (48 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_write_buf), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_read_buf), (48 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_read_buf), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_ce_enable), (28 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_ce_enable), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_ce_disable), (28 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_ce_disable), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pan1026_get_status), (28 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pan1026_get_status), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_clear_status), (28 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_clear_status), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_flush_rx_fifo), (28 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_flush_rx_fifo), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_flush_tx_fifo), (28 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_flush_tx_fifo), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_clear_fifo), (48 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_clear_fifo), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_tx_mode), (132 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_tx_mode), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_rx_mode), (48 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_rx_mode), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_set_power), (52 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_power), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_set_channel), (32 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_channel), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_set_mode), (252 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_mode), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_set_addr), (48 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_addr), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_set_rx_payload_len), (36 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_set_rx_payload_len), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_byte_bit_decode), (130 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_byte_bit_decode), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_tx_data), (96 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_tx_data), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_tx_data_ack), (208 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_tx_data_ack), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_rx_data), (240 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_rx_data), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_rx_data_ack_fix), (176 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_rx_data_ack_fix), (8 bytes).
+    Removing bsp_pn298.o(.text.__bsp_pn298_1v8_reg_init), (292 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.__bsp_pn298_1v8_reg_init), (8 bytes).
+    Removing bsp_pn298.o(.text.__bsp_pn298_init), (396 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.__bsp_pn298_init), (8 bytes).
+    Removing bsp_pn298.o(.text.bsp_pn298_init), (84 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.bsp_pn298_init), (8 bytes).
+    Removing bsp_pn298.o(.text.pn298_carrier), (112 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.pn298_carrier), (8 bytes).
+    Removing bsp_pn298.o(.text.pn298_deep_sleep), (44 bytes).
+    Removing bsp_pn298.o(.ARM.exidx.text.pn298_deep_sleep), (8 bytes).
+    Removing bsp_pn298.o(.bss.cnt), (2 bytes).
+    Removing bsp_pn298.o(.bss.status), (1 bytes).
+    Removing bsp_rfspi_sw.o(.text), (0 bytes).
+    Removing bsp_rfspi_sw.o(.text.rfspi_pan742_write_byte), (68 bytes).
+    Removing bsp_rfspi_sw.o(.ARM.exidx.text.rfspi_pan742_write_byte), (8 bytes).
+    Removing bsp_rfspi_sw.o(.text.rfspi_pan742_read_byte), (68 bytes).
+    Removing bsp_rfspi_sw.o(.ARM.exidx.text.rfspi_pan742_read_byte), (8 bytes).
+    Removing bsp_rfspi_sw.o(.text.bsp_rfspi_init), (128 bytes).
+    Removing bsp_rfspi_sw.o(.ARM.exidx.text.bsp_rfspi_init), (8 bytes).
+    Removing kernel.o(.text), (0 bytes).
+    Removing kernel.o(.ARM.exidx.text.task_idle_process), (8 bytes).
+    Removing kernel.o(.ARM.exidx.text.Callback_os_timer), (8 bytes).
+    Removing kernel.o(.ARM.exidx.text.open_app_process), (8 bytes).
+    Removing kernel.o(.rodata.TASK_SIZE), (2 bytes).
+    Removing os_beason.o(.text), (0 bytes).
+    Removing os_beason.o(.text.init_soft_link), (12 bytes).
+    Removing os_beason.o(.ARM.exidx.text.init_soft_link), (8 bytes).
+    Removing os_beason.o(.ARM.exidx.text.open_systick_irq), (8 bytes).
+    Removing os_beason.o(.ARM.exidx.text.is_systick_opened), (8 bytes).
+    Removing os_beason.o(.text.close_systick_irq), (16 bytes).
+    Removing os_beason.o(.ARM.exidx.text.close_systick_irq), (8 bytes).
+    Removing os_beason.o(.text.create_soft_timer), (36 bytes).
+    Removing os_beason.o(.ARM.exidx.text.create_soft_timer), (8 bytes).
+    Removing os_beason.o(.text.cb_soft_timer), (56 bytes).
+    Removing os_beason.o(.ARM.exidx.text.cb_soft_timer), (8 bytes).
+    Removing os_beason.o(.ARM.exidx.text.cb_systick_1ms), (8 bytes).
+    Removing os_beason.o(.ARM.exidx.text.delay_us), (8 bytes).
+    Removing os_beason.o(.ARM.exidx.text.delay_ms), (8 bytes).
+    Removing app_leds.o(.text), (0 bytes).
+    Removing app_leds.o(.text.set_led_patt), (64 bytes).
+    Removing app_leds.o(.ARM.exidx.text.set_led_patt), (8 bytes).
+    Removing app_leds.o(.ARM.exidx.text.perform_led_display), (8 bytes).
+    Removing app_leds.o(.ARM.exidx.text.task_leds_display), (8 bytes).
+    Removing app_oled.o(.text), (0 bytes).
+    Removing app_oled.o(.ARM.exidx.text.task_OLED_screen), (8 bytes).
+    Removing oled.o(.text), (0 bytes).
+    Removing oled.o(.text.OLED_WR_Byte), (20 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_WR_Byte), (8 bytes).
+    Removing oled.o(.text.OLED_Set_Pos), (36 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Set_Pos), (8 bytes).
+    Removing oled.o(.text.OLED_Display_On), (22 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Display_On), (8 bytes).
+    Removing oled.o(.text.OLED_Display_Off), (22 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Display_Off), (8 bytes).
+    Removing oled.o(.text.OLED_Set_Pixel), (48 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Set_Pixel), (8 bytes).
+    Removing oled.o(.text.OLED_Display), (64 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Display), (8 bytes).
+    Removing oled.o(.text.OLED_Clear), (92 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Clear), (8 bytes).
+    Removing oled.o(.text.OLED_Init_GPIO), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Init_GPIO), (8 bytes).
+    Removing oled.o(.ARM.exidx.text.OLED_Init), (8 bytes).
+    Removing oled_rdwr.o(.text), (0 bytes).
+    Removing oled_rdwr.o(.text.Write_IIC_Command), (36 bytes).
+    Removing oled_rdwr.o(.ARM.exidx.text.Write_IIC_Command), (8 bytes).
+    Removing oled_rdwr.o(.text.Write_IIC_Data), (36 bytes).
+    Removing oled_rdwr.o(.ARM.exidx.text.Write_IIC_Data), (8 bytes).
+    Removing gui.o(.text), (0 bytes).
+    Removing gui.o(.text.GUI_DrawPoint), (12 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_DrawPoint), (8 bytes).
+    Removing gui.o(.text.GUI_Fill), (100 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_Fill), (8 bytes).
+    Removing gui.o(.text.GUI_DrawLine), (182 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_DrawLine), (8 bytes).
+    Removing gui.o(.text.GUI_DrawRectangle), (290 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_DrawRectangle), (8 bytes).
+    Removing gui.o(.text.GUI_FillRectangle), (100 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_FillRectangle), (8 bytes).
+    Removing gui.o(.text.GUI_DrawCircle), (80 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_DrawCircle), (8 bytes).
+    Removing gui.o(.text._draw_circle_8), (150 bytes).
+    Removing gui.o(.ARM.exidx.text._draw_circle_8), (8 bytes).
+    Removing gui.o(.text.GUI_FillCircle), (106 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_FillCircle), (8 bytes).
+    Removing gui.o(.text.GUI_DrawTriangel), (528 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_DrawTriangel), (8 bytes).
+    Removing gui.o(.text.GUI_FillTriangel), (434 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_FillTriangel), (8 bytes).
+    Removing gui.o(.text.GUI_ShowChar), (224 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_ShowChar), (8 bytes).
+    Removing gui.o(.text.GUI_ShowString), (100 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_ShowString), (8 bytes).
+    Removing gui.o(.text.GUI_ShowNum), (158 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_ShowNum), (8 bytes).
+    Removing gui.o(.text.GUI_ShowFont16), (8 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_ShowFont16), (8 bytes).
+    Removing gui.o(.text.GUI_ShowFont24), (8 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_ShowFont24), (8 bytes).
+    Removing gui.o(.text.GUI_ShowFont32), (8 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_ShowFont32), (8 bytes).
+    Removing gui.o(.text.GUI_ShowCHinese), (48 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_ShowCHinese), (8 bytes).
+    Removing gui.o(.text.GUI_DrawBMP), (162 bytes).
+    Removing gui.o(.ARM.exidx.text.GUI_DrawBMP), (8 bytes).
+    Removing test.o(.text), (0 bytes).
+    Removing test.o(.text.TEST_MainPage), (136 bytes).
+    Removing test.o(.ARM.exidx.text.TEST_MainPage), (8 bytes).
+    Removing test.o(.text.Test_Color), (84 bytes).
+    Removing test.o(.ARM.exidx.text.Test_Color), (8 bytes).
+    Removing test.o(.text.Test_Rectangular), (124 bytes).
+    Removing test.o(.ARM.exidx.text.Test_Rectangular), (8 bytes).
+    Removing test.o(.text.Test_Circle), (116 bytes).
+    Removing test.o(.ARM.exidx.text.Test_Circle), (8 bytes).
+    Removing test.o(.text.Test_Triangle), (156 bytes).
+    Removing test.o(.ARM.exidx.text.Test_Triangle), (8 bytes).
+    Removing test.o(.text.TEST_English), (224 bytes).
+    Removing test.o(.ARM.exidx.text.TEST_English), (8 bytes).
+    Removing test.o(.text.TEST_Number_Character), (208 bytes).
+    Removing test.o(.ARM.exidx.text.TEST_Number_Character), (8 bytes).
+    Removing test.o(.text.TEST_Chinese), (196 bytes).
+    Removing test.o(.ARM.exidx.text.TEST_Chinese), (8 bytes).
+    Removing test.o(.text.TEST_BMP), (108 bytes).
+    Removing test.o(.ARM.exidx.text.TEST_BMP), (8 bytes).
+    Removing test.o(.text.TEST_Menu1), (816 bytes).
+    Removing test.o(.ARM.exidx.text.TEST_Menu1), (8 bytes).
+    Removing test.o(.text.TEST_Menu2), (452 bytes).
+    Removing test.o(.ARM.exidx.text.TEST_Menu2), (8 bytes).
+    Removing test.o(.rodata.str1.1), (45 bytes).
+    Removing bmp.o(.text), (0 bytes).
+    Removing bmp.o(.rodata.BMP2), (1024 bytes).
+    Removing bmp.o(.rodata.BMP3), (1024 bytes).
+    Removing bmp.o(.rodata.BMP4), (1024 bytes).
+    Removing bmp.o(.rodata.BMP5), (224 bytes).
+    Removing oledfont.o(.text), (0 bytes).
+    Removing oledfont.o(.rodata.F6x8), (760 bytes).
+    Removing oledfont.o(.rodata.F8X16), (1520 bytes).
+    Removing oledfont.o(.rodata.cfont16), (544 bytes).
+    Removing oledfont.o(.rodata.cfont24), (444 bytes).
+    Removing oledfont.o(.rodata.cfont32), (780 bytes).
+    Removing dadd.o(.text), (356 bytes).
+    Removing dmul.o(.text), (208 bytes).
+    Removing ddiv.o(.text), (240 bytes).
+    Removing dfixul.o(.text), (64 bytes).
+    Removing cdrcmple.o(.text), (40 bytes).
+    Removing depilogue.o(.text), (190 bytes).
+    Removing depilogue.o(i.__ARM_clz), (46 bytes).
+
+366 unused section(s) (total 23858 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdivfast.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdivfast_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv_div0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv0.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/stubs.s          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/stdlib/rand.c           0x00000000   Number         0  rand.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ..\Mcu\startup_py32f030xx.s              0x00000000   Number         0  startup_py32f030xx.o ABSOLUTE
+    Board.c                                  0x00000000   Number         0  board.o ABSOLUTE
+    app_leds.c                               0x00000000   Number         0  app_leds.o ABSOLUTE
+    app_oled.c                               0x00000000   Number         0  app_oled.o ABSOLUTE
+    bmp.c                                    0x00000000   Number         0  bmp.o ABSOLUTE
+    bsp_pn298.c                              0x00000000   Number         0  bsp_pn298.o ABSOLUTE
+    bsp_rfspi_sw.c                           0x00000000   Number         0  bsp_rfspi_sw.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    dev_leds.c                               0x00000000   Number         0  dev_leds.o ABSOLUTE
+    gui.c                                    0x00000000   Number         0  gui.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    kernel.c                                 0x00000000   Number         0  kernel.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    oled.c                                   0x00000000   Number         0  oled.o ABSOLUTE
+    oled_rdwr.c                              0x00000000   Number         0  oled_rdwr.o ABSOLUTE
+    oledfont.c                               0x00000000   Number         0  oledfont.o ABSOLUTE
+    os_beason.c                              0x00000000   Number         0  os_beason.o ABSOLUTE
+    phy_gpio.c                               0x00000000   Number         0  phy_gpio.o ABSOLUTE
+    phy_i2c.c                                0x00000000   Number         0  phy_i2c.o ABSOLUTE
+    phy_timer.c                              0x00000000   Number         0  phy_timer.o ABSOLUTE
+    phy_uart.c                               0x00000000   Number         0  phy_uart.o ABSOLUTE
+    phy_watchdog.c                           0x00000000   Number         0  phy_watchdog.o ABSOLUTE
+    py32f0xx_it.c                            0x00000000   Number         0  py32f0xx_it.o ABSOLUTE
+    py32f0xx_ll_dma.c                        0x00000000   Number         0  py32f0xx_ll_dma.o ABSOLUTE
+    py32f0xx_ll_gpio.c                       0x00000000   Number         0  py32f0xx_ll_gpio.o ABSOLUTE
+    py32f0xx_ll_i2c.c                        0x00000000   Number         0  py32f0xx_ll_i2c.o ABSOLUTE
+    py32f0xx_ll_led.c                        0x00000000   Number         0  py32f0xx_ll_led.o ABSOLUTE
+    py32f0xx_ll_rcc.c                        0x00000000   Number         0  py32f0xx_ll_rcc.o ABSOLUTE
+    py32f0xx_ll_tim.c                        0x00000000   Number         0  py32f0xx_ll_tim.o ABSOLUTE
+    py32f0xx_ll_usart.c                      0x00000000   Number         0  py32f0xx_ll_usart.o ABSOLUTE
+    py32f0xx_ll_utils.c                      0x00000000   Number         0  py32f0xx_ll_utils.o ABSOLUTE
+    system_py32f0xx.c                        0x00000000   Number         0  system_py32f0xx.o ABSOLUTE
+    test.c                                   0x00000000   Number         0  test.o ABSOLUTE
+    RESET                                    0x08000000   Section      192  startup_py32f030xx.o(RESET)
+    .ARM.Collect$$$$00000000                 0x080000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x080000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x080000c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x080000c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x080000c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x080000c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x080000d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x080000d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x080000d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x080000d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x080000d4   Section       28  startup_py32f030xx.o(.text)
+    .text                                    0x080000f0   Section        0  memseta.o(.text)
+    .text                                    0x08000114   Section        0  uidiv_div0.o(.text)
+    .text                                    0x08000154   Section       48  init.o(.text)
+    [Anonymous Symbol]                       0x08000184   Section        0  system_py32f0xx.o(.text.$Sub$$main)
+    __arm_cp.2_0                             0x080001a8   Number         4  system_py32f0xx.o(.text.$Sub$$main)
+    __arm_cp.2_1                             0x080001ac   Number         4  system_py32f0xx.o(.text.$Sub$$main)
+    [Anonymous Symbol]                       0x080001b0   Section        0  phy_i2c.o(.text.APP_ConfigI2cMaster)
+    __arm_cp.0_0                             0x08000240   Number         4  phy_i2c.o(.text.APP_ConfigI2cMaster)
+    __arm_cp.0_1                             0x08000244   Number         4  phy_i2c.o(.text.APP_ConfigI2cMaster)
+    [Anonymous Symbol]                       0x08000248   Section        0  phy_i2c.o(.text.APP_MasterReceive)
+    __arm_cp.2_5                             0x080003d8   Number         4  phy_i2c.o(.text.APP_MasterReceive)
+    [Anonymous Symbol]                       0x080003dc   Section        0  phy_i2c.o(.text.APP_MasterTransmit)
+    __arm_cp.1_0                             0x08000490   Number         4  phy_i2c.o(.text.APP_MasterTransmit)
+    __arm_cp.1_1                             0x08000494   Number         4  phy_i2c.o(.text.APP_MasterTransmit)
+    __arm_cp.1_2                             0x08000498   Number         4  phy_i2c.o(.text.APP_MasterTransmit)
+    __arm_cp.1_3                             0x0800049c   Number         4  phy_i2c.o(.text.APP_MasterTransmit)
+    __arm_cp.1_4                             0x080004a0   Number         4  phy_i2c.o(.text.APP_MasterTransmit)
+    [Anonymous Symbol]                       0x080004a4   Section        0  kernel.o(.text.Callback_os_timer)
+    __arm_cp.1_0                             0x080004c0   Number         4  kernel.o(.text.Callback_os_timer)
+    [Anonymous Symbol]                       0x080004c4   Section        0  py32f0xx_it.o(.text.HardFault_Handler)
+    [Anonymous Symbol]                       0x080004c6   Section        0  py32f0xx_ll_gpio.o(.text.LL_GPIO_Init)
+    [Anonymous Symbol]                       0x08000578   Section        0  py32f0xx_ll_i2c.o(.text.LL_I2C_Init)
+    __arm_cp.1_0                             0x08000640   Number         4  py32f0xx_ll_i2c.o(.text.LL_I2C_Init)
+    __arm_cp.1_1                             0x08000644   Number         4  py32f0xx_ll_i2c.o(.text.LL_I2C_Init)
+    __arm_cp.1_2                             0x08000648   Number         4  py32f0xx_ll_i2c.o(.text.LL_I2C_Init)
+    __arm_cp.1_3                             0x0800064c   Number         4  py32f0xx_ll_i2c.o(.text.LL_I2C_Init)
+    [Anonymous Symbol]                       0x08000650   Section        0  py32f0xx_ll_utils.o(.text.LL_Init1msTick)
+    [Anonymous Symbol]                       0x0800066c   Section        0  py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq)
+    __arm_cp.1_1                             0x080006e4   Number         4  py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq)
+    __arm_cp.1_2                             0x080006e8   Number         4  py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq)
+    __arm_cp.1_3                             0x080006ec   Number         4  py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq)
+    __arm_cp.1_4                             0x080006f0   Number         4  py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq)
+    __arm_cp.1_5                             0x080006f4   Number         4  py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq)
+    [Anonymous Symbol]                       0x080006f8   Section        0  py32f0xx_ll_utils.o(.text.LL_SetSystemCoreClock)
+    __arm_cp.2_0                             0x08000700   Number         4  py32f0xx_ll_utils.o(.text.LL_SetSystemCoreClock)
+    [Anonymous Symbol]                       0x08000704   Section        0  py32f0xx_it.o(.text.NMI_Handler)
+    [Anonymous Symbol]                       0x08000708   Section        0  oled.o(.text.OLED_Init)
+    __arm_cp.8_0                             0x08000720   Number         4  oled.o(.text.OLED_Init)
+    [Anonymous Symbol]                       0x08000724   Section        0  py32f0xx_it.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x08000726   Section        0  py32f0xx_it.o(.text.SVC_Handler)
+    [Anonymous Symbol]                       0x08000728   Section        0  py32f0xx_it.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08000730   Section        0  system_py32f0xx.o(.text.SystemInit)
+    __arm_cp.1_0                             0x08000750   Number         4  system_py32f0xx.o(.text.SystemInit)
+    __arm_cp.1_1                             0x08000754   Number         4  system_py32f0xx.o(.text.SystemInit)
+    __arm_cp.1_2                             0x08000758   Number         4  system_py32f0xx.o(.text.SystemInit)
+    __arm_cp.1_3                             0x0800075c   Number         4  system_py32f0xx.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x08000760   Section        0  py32f0xx_it.o(.text.TIM14_IRQHandler)
+    __arm_cp.5_0                             0x08000780   Number         4  py32f0xx_it.o(.text.TIM14_IRQHandler)
+    [Anonymous Symbol]                       0x08000784   Section        0  phy_timer.o(.text.TIM14_UpdateCallback)
+    __arm_cp.8_0                             0x080007f4   Number         4  phy_timer.o(.text.TIM14_UpdateCallback)
+    __arm_cp.8_1                             0x080007f8   Number         4  phy_timer.o(.text.TIM14_UpdateCallback)
+    __arm_cp.8_2                             0x080007fc   Number         4  phy_timer.o(.text.TIM14_UpdateCallback)
+    __arm_cp.8_3                             0x08000800   Number         4  phy_timer.o(.text.TIM14_UpdateCallback)
+    __arm_cp.8_4                             0x08000804   Number         4  phy_timer.o(.text.TIM14_UpdateCallback)
+    __arm_cp.8_5                             0x08000808   Number         4  phy_timer.o(.text.TIM14_UpdateCallback)
+    __arm_cp.8_6                             0x0800080c   Number         4  phy_timer.o(.text.TIM14_UpdateCallback)
+    [Anonymous Symbol]                       0x08000810   Section        0  phy_watchdog.o(.text.WatchdogClear)
+    loop                                     0x08000812   Number         0  board.o(.text.__delay_pan742)
+    [Anonymous Symbol]                       0x08000812   Section        0  board.o(.text.__delay_pan742)
+    [Anonymous Symbol]                       0x0800081c   Section        0  os_beason.o(.text.cb_systick_1ms)
+    __arm_cp.6_1                             0x0800087c   Number         4  os_beason.o(.text.cb_systick_1ms)
+    __arm_cp.6_2                             0x08000880   Number         4  os_beason.o(.text.cb_systick_1ms)
+    __arm_cp.6_3                             0x08000884   Number         4  os_beason.o(.text.cb_systick_1ms)
+    __arm_cp.6_4                             0x08000888   Number         4  os_beason.o(.text.cb_systick_1ms)
+    [Anonymous Symbol]                       0x0800088c   Section        0  phy_gpio.o(.text.configure_gpio_pattern)
+    __arm_cp.0_0                             0x080008e4   Number         4  phy_gpio.o(.text.configure_gpio_pattern)
+    __arm_cp.0_2                             0x080008e8   Number         4  phy_gpio.o(.text.configure_gpio_pattern)
+    [Anonymous Symbol]                       0x080008ec   Section        0  dev_leds.o(.text.control_leds_condition)
+    [Anonymous Symbol]                       0x08000900   Section        0  os_beason.o(.text.delay_ms)
+    __arm_cp.8_1                             0x08000944   Number         4  os_beason.o(.text.delay_ms)
+    __arm_cp.8_2                             0x08000948   Number         4  os_beason.o(.text.delay_ms)
+    [Anonymous Symbol]                       0x0800094c   Section        0  os_beason.o(.text.delay_us)
+    [Anonymous Symbol]                       0x08000964   Section        0  phy_gpio.o(.text.gpio_write_level)
+    [Anonymous Symbol]                       0x08000978   Section        0  board.o(.text.init_board_global)
+    __arm_cp.2_0                             0x080009c8   Number         4  board.o(.text.init_board_global)
+    __arm_cp.2_1                             0x080009cc   Number         4  board.o(.text.init_board_global)
+    [Anonymous Symbol]                       0x080009d0   Section        0  dev_leds.o(.text.init_leds_object)
+    __arm_cp.0_0                             0x08000a04   Number         4  dev_leds.o(.text.init_leds_object)
+    [Anonymous Symbol]                       0x08000a08   Section        0  os_beason.o(.text.is_systick_opened)
+    __arm_cp.2_0                             0x08000a14   Number         4  os_beason.o(.text.is_systick_opened)
+    [Anonymous Symbol]                       0x08000a18   Section        0  main.o(.text.main)
+    [Anonymous Symbol]                       0x08000a28   Section        0  kernel.o(.text.open_app_process)
+    __arm_cp.2_0                             0x08000a74   Number         4  kernel.o(.text.open_app_process)
+    __arm_cp.2_1                             0x08000a78   Number         4  kernel.o(.text.open_app_process)
+    [Anonymous Symbol]                       0x08000a7c   Section        0  os_beason.o(.text.open_systick_irq)
+    __arm_cp.1_0                             0x08000aa0   Number         4  os_beason.o(.text.open_systick_irq)
+    __arm_cp.1_1                             0x08000aa4   Number         4  os_beason.o(.text.open_systick_irq)
+    __arm_cp.1_2                             0x08000aa8   Number         4  os_beason.o(.text.open_systick_irq)
+    [Anonymous Symbol]                       0x08000aac   Section        0  app_leds.o(.text.perform_led_display)
+    [Anonymous Symbol]                       0x08000bcc   Section        0  app_oled.o(.text.task_OLED_screen)
+    __arm_cp.0_0                             0x08000c0c   Number         4  app_oled.o(.text.task_OLED_screen)
+    __arm_cp.0_1                             0x08000c10   Number         4  app_oled.o(.text.task_OLED_screen)
+    __arm_cp.0_2                             0x08000c14   Number         4  app_oled.o(.text.task_OLED_screen)
+    __arm_cp.0_3                             0x08000c18   Number         4  app_oled.o(.text.task_OLED_screen)
+    [Anonymous Symbol]                       0x08000c1c   Section        0  kernel.o(.text.task_idle_process)
+    [Anonymous Symbol]                       0x08000c20   Section        0  app_leds.o(.text.task_leds_display)
+    __arm_cp.2_0                             0x08000c88   Number         4  app_leds.o(.text.task_leds_display)
+    __arm_cp.2_1                             0x08000c8c   Number         4  app_leds.o(.text.task_leds_display)
+    __arm_cp.2_2                             0x08000c90   Number         4  app_leds.o(.text.task_leds_display)
+    __arm_cp.2_3                             0x08000c94   Number         4  app_leds.o(.text.task_leds_display)
+    i.__scatterload_copy                     0x08000c98   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08000ca6   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08000ca8   Section       14  handlers.o(i.__scatterload_zeroinit)
+    OLED_buffer                              0x200000f4   Data        1024  oled.o(.bss.OLED_buffer)
+    [Anonymous Symbol]                       0x200000f4   Section        0  oled.o(.bss.OLED_buffer)
+    SysTick_ISR.s_count                      0x200004f8   Data           1  phy_timer.o(.bss.SysTick_ISR.s_count)
+    [Anonymous Symbol]                       0x200004f8   Section        0  phy_timer.o(.bss.SysTick_ISR.s_count)
+    g_uc_enable_systick_isr                  0x20000510   Data           1  phy_timer.o(.bss.g_uc_enable_systick_isr)
+    [Anonymous Symbol]                       0x20000510   Section        0  phy_timer.o(.bss.g_uc_enable_systick_isr)
+    open_app_process.tick_weak               0x20000524   Data           2  kernel.o(.bss.open_app_process.tick_weak)
+    [Anonymous Symbol]                       0x20000524   Section        0  kernel.o(.bss.open_app_process.tick_weak)
+    s_t_tmr                                  0x20000530   Data          48  phy_timer.o(.bss.s_t_tmr)
+    [Anonymous Symbol]                       0x20000530   Section        0  phy_timer.o(.bss.s_t_tmr)
+    s_uc_timeout_flag                        0x20000560   Data           1  phy_timer.o(.bss.s_uc_timeout_flag)
+    [Anonymous Symbol]                       0x20000560   Section        0  phy_timer.o(.bss.s_uc_timeout_flag)
+    s_ui_delay_count                         0x20000564   Data           4  phy_timer.o(.bss.s_ui_delay_count)
+    [Anonymous Symbol]                       0x20000564   Section        0  phy_timer.o(.bss.s_ui_delay_count)
+    schedule.0                               0x20000568   Data           1  app_leds.o(.bss.schedule.0)
+    [Anonymous Symbol]                       0x20000568   Section        0  app_leds.o(.bss.schedule.0)
+    schedule.0                               0x2000056c   Data           1  app_oled.o(.bss.schedule.0)
+    [Anonymous Symbol]                       0x2000056c   Section        0  app_oled.o(.bss.schedule.0)
+    schedule.1                               0x20000570   Data           1  app_leds.o(.bss.schedule.1)
+    [Anonymous Symbol]                       0x20000570   Section        0  app_leds.o(.bss.schedule.1)
+    STACK                                    0x20000578   Section     1024  startup_py32f030xx.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    _printf_a                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_c                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_charcount                        0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_d                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_e                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_f                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_flags                            0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_fp_dec                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_fp_hex                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_g                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_i                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_int_dec                          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_l                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lc                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_ll                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lld                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lli                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llo                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llu                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llx                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_dec                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_hex                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_oct                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_ls                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_mbtowc                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_n                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_o                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_p                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_percent                          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_pre_padding                      0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_s                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_str                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_truncate_signed                  0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_truncate_unsigned                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_u                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_wc                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_wctomb                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_x                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x000000c0   Number         0  startup_py32f030xx.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_py32f030xx.o(RESET)
+    __Vectors_End                            0x080000c0   Data           0  startup_py32f030xx.o(RESET)
+    __main                                   0x080000c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x080000c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x080000c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x080000c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x080000c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x080000c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x080000c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x080000d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x080000d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x080000d5   Thumb Code     8  startup_py32f030xx.o(.text)
+    ADC_COMP_IRQHandler                      0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    DMA1_Channel1_IRQHandler                 0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    DMA1_Channel2_3_IRQHandler               0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    EXTI0_1_IRQHandler                       0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    EXTI2_3_IRQHandler                       0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    EXTI4_15_IRQHandler                      0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    FLASH_IRQHandler                         0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    I2C1_IRQHandler                          0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    LED_IRQHandler                           0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    LPTIM1_IRQHandler                        0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    PVD_IRQHandler                           0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    RCC_IRQHandler                           0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    RTC_IRQHandler                           0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    SPI1_IRQHandler                          0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    SPI2_IRQHandler                          0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    TIM16_IRQHandler                         0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    TIM17_IRQHandler                         0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    TIM1_BRK_UP_TRG_COM_IRQHandler           0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    TIM1_CC_IRQHandler                       0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    TIM3_IRQHandler                          0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    USART1_IRQHandler                        0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    USART2_IRQHandler                        0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    WWDG_IRQHandler                          0x080000e7   Thumb Code     0  startup_py32f030xx.o(.text)
+    __aeabi_memset                           0x080000f1   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x080000f1   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x080000f1   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x080000ff   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x080000ff   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x080000ff   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x08000103   Thumb Code    18  memseta.o(.text)
+    __aeabi_uidiv                            0x08000115   Thumb Code     0  uidiv_div0.o(.text)
+    __aeabi_uidivmod                         0x08000115   Thumb Code    62  uidiv_div0.o(.text)
+    __scatterload                            0x08000155   Thumb Code    38  init.o(.text)
+    __scatterload_rt2                        0x08000155   Thumb Code     0  init.o(.text)
+    main                                     0x08000185   Thumb Code    36  system_py32f0xx.o(.text.$Sub$$main)
+    APP_ConfigI2cMaster                      0x080001b1   Thumb Code   144  phy_i2c.o(.text.APP_ConfigI2cMaster)
+    APP_MasterReceive                        0x08000249   Thumb Code   400  phy_i2c.o(.text.APP_MasterReceive)
+    APP_MasterTransmit                       0x080003dd   Thumb Code   180  phy_i2c.o(.text.APP_MasterTransmit)
+    Callback_os_timer                        0x080004a5   Thumb Code    28  kernel.o(.text.Callback_os_timer)
+    HardFault_Handler                        0x080004c5   Thumb Code     2  py32f0xx_it.o(.text.HardFault_Handler)
+    LL_GPIO_Init                             0x080004c7   Thumb Code   176  py32f0xx_ll_gpio.o(.text.LL_GPIO_Init)
+    LL_I2C_Init                              0x08000579   Thumb Code   200  py32f0xx_ll_i2c.o(.text.LL_I2C_Init)
+    LL_Init1msTick                           0x08000651   Thumb Code    28  py32f0xx_ll_utils.o(.text.LL_Init1msTick)
+    LL_RCC_GetSystemClocksFreq               0x0800066d   Thumb Code   120  py32f0xx_ll_rcc.o(.text.LL_RCC_GetSystemClocksFreq)
+    LL_SetSystemCoreClock                    0x080006f9   Thumb Code     8  py32f0xx_ll_utils.o(.text.LL_SetSystemCoreClock)
+    NMI_Handler                              0x08000705   Thumb Code     2  py32f0xx_it.o(.text.NMI_Handler)
+    OLED_Init                                0x08000709   Thumb Code    24  oled.o(.text.OLED_Init)
+    PendSV_Handler                           0x08000725   Thumb Code     2  py32f0xx_it.o(.text.PendSV_Handler)
+    SVC_Handler                              0x08000727   Thumb Code     2  py32f0xx_it.o(.text.SVC_Handler)
+    SysTick_Handler                          0x08000729   Thumb Code     8  py32f0xx_it.o(.text.SysTick_Handler)
+    SystemInit                               0x08000731   Thumb Code    32  system_py32f0xx.o(.text.SystemInit)
+    TIM14_IRQHandler                         0x08000761   Thumb Code    32  py32f0xx_it.o(.text.TIM14_IRQHandler)
+    TIM14_UpdateCallback                     0x08000785   Thumb Code   112  phy_timer.o(.text.TIM14_UpdateCallback)
+    WatchdogClear                            0x08000811   Thumb Code     2  phy_watchdog.o(.text.WatchdogClear)
+    __delay_pan742                           0x08000813   Thumb Code     8  board.o(.text.__delay_pan742)
+    cb_systick_1ms                           0x0800081d   Thumb Code    96  os_beason.o(.text.cb_systick_1ms)
+    configure_gpio_pattern                   0x0800088d   Thumb Code    88  phy_gpio.o(.text.configure_gpio_pattern)
+    control_leds_condition                   0x080008ed   Thumb Code    20  dev_leds.o(.text.control_leds_condition)
+    delay_ms                                 0x08000901   Thumb Code    68  os_beason.o(.text.delay_ms)
+    delay_us                                 0x0800094d   Thumb Code    24  os_beason.o(.text.delay_us)
+    gpio_write_level                         0x08000965   Thumb Code    18  phy_gpio.o(.text.gpio_write_level)
+    init_board_global                        0x08000979   Thumb Code    80  board.o(.text.init_board_global)
+    init_leds_object                         0x080009d1   Thumb Code    52  dev_leds.o(.text.init_leds_object)
+    is_systick_opened                        0x08000a09   Thumb Code    12  os_beason.o(.text.is_systick_opened)
+    $Super$$main                             0x08000a19   Thumb Code    14  main.o(.text.main)
+    open_app_process                         0x08000a29   Thumb Code    76  kernel.o(.text.open_app_process)
+    open_systick_irq                         0x08000a7d   Thumb Code    36  os_beason.o(.text.open_systick_irq)
+    perform_led_display                      0x08000aad   Thumb Code   288  app_leds.o(.text.perform_led_display)
+    task_OLED_screen                         0x08000bcd   Thumb Code    64  app_oled.o(.text.task_OLED_screen)
+    task_idle_process                        0x08000c1d   Thumb Code     2  kernel.o(.text.task_idle_process)
+    task_leds_display                        0x08000c21   Thumb Code   104  app_leds.o(.text.task_leds_display)
+    __scatterload_copy                       0x08000c99   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08000ca7   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08000ca9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    AHBPrescTable                            0x08000cb8   Data          64  system_py32f0xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x08000cf8   Data          32  system_py32f0xx.o(.rodata.APBPrescTable)
+    HSIFreqTable                             0x08000d18   Data          32  system_py32f0xx.o(.rodata.HSIFreqTable)
+    Region$$Table$$Base                      0x08000d38   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000d58   Number         0  anon$$obj.o(Region$$Table)
+    VECT_SRAM_TAB                            0x20000000   Data         192  system_py32f0xx.o(.ARM.__at_0x20000000)
+    APPS                                     0x200000c0   Data          24  kernel.o(.data.APPS)
+    SystemCoreClock                          0x200000d8   Data           4  system_py32f0xx.o(.data.SystemCoreClock)
+    aTxBuffer                                0x200000dc   Data          15  app_oled.o(.data.aTxBuffer)
+    Devaddress                               0x200000f0   Data           4  phy_i2c.o(.bss.Devaddress)
+    State                                    0x200004f4   Data           4  phy_i2c.o(.bss.State)
+    XferCount                                0x200004fa   Data           2  phy_i2c.o(.bss.XferCount)
+    aRxBuffer                                0x200004fc   Data          15  app_oled.o(.bss.aRxBuffer)
+    g_i_run_time                             0x2000050c   Data           4  phy_timer.o(.bss.g_i_run_time)
+    lamps                                    0x20000514   Data          16  app_leds.o(.bss.lamps)
+    pBuffPtr                                 0x20000528   Data           4  phy_i2c.o(.bss.pBuffPtr)
+    rt                                       0x2000052c   Data           4  os_beason.o(.bss.rt)
+    tim_head                                 0x20000574   Data           4  os_beason.o(.bss.tim_head)
+    __initial_sp                             0x20000978   Data           0  startup_py32f030xx.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080000c1
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000e48, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000d58, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x000000c0   Data   RO           22    RESET               startup_py32f030xx.o
+    0x080000c0   0x080000c0   0x00000000   Code   RO          629  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x080000c0   0x080000c0   0x00000004   Code   RO          906    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x080000c4   0x080000c4   0x00000004   Code   RO          909    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO          911    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO          913    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x080000c8   0x080000c8   0x00000008   Code   RO          914    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x080000d0   0x080000d0   0x00000000   Code   RO          916    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x080000d0   0x080000d0   0x00000000   Code   RO          918    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x080000d0   0x080000d0   0x00000004   Code   RO          907    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x080000d4   0x080000d4   0x0000001c   Code   RO           23    .text               startup_py32f030xx.o
+    0x080000f0   0x080000f0   0x00000024   Code   RO          643    .text               mc_p.l(memseta.o)
+    0x08000114   0x08000114   0x0000003e   Code   RO          925    .text               mc_p.l(uidiv_div0.o)
+    0x08000152   0x08000152   0x00000002   PAD
+    0x08000154   0x08000154   0x00000030   Code   RO          944    .text               mc_p.l(init.o)
+    0x08000184   0x08000184   0x0000002c   Code   RO            6    .text.$Sub$$main    system_py32f0xx.o
+    0x080001b0   0x080001b0   0x00000098   Code   RO          251    .text.APP_ConfigI2cMaster  phy_i2c.o
+    0x08000248   0x08000248   0x00000194   Code   RO          255    .text.APP_MasterReceive  phy_i2c.o
+    0x080003dc   0x080003dc   0x000000c8   Code   RO          253    .text.APP_MasterTransmit  phy_i2c.o
+    0x080004a4   0x080004a4   0x00000020   Code   RO          425    .text.Callback_os_timer  kernel.o
+    0x080004c4   0x080004c4   0x00000002   Code   RO          203    .text.HardFault_Handler  py32f0xx_it.o
+    0x080004c6   0x080004c6   0x000000b0   Code   RO           54    .text.LL_GPIO_Init  py32f0xx_ll_gpio.o
+    0x08000576   0x08000576   0x00000002   PAD
+    0x08000578   0x08000578   0x000000d8   Code   RO          180    .text.LL_I2C_Init   py32f0xx_ll_i2c.o
+    0x08000650   0x08000650   0x0000001c   Code   RO           30    .text.LL_Init1msTick  py32f0xx_ll_utils.o
+    0x0800066c   0x0800066c   0x0000008c   Code   RO          114    .text.LL_RCC_GetSystemClocksFreq  py32f0xx_ll_rcc.o
+    0x080006f8   0x080006f8   0x0000000c   Code   RO           34    .text.LL_SetSystemCoreClock  py32f0xx_ll_utils.o
+    0x08000704   0x08000704   0x00000002   Code   RO          201    .text.NMI_Handler   py32f0xx_it.o
+    0x08000706   0x08000706   0x00000002   PAD
+    0x08000708   0x08000708   0x0000001c   Code   RO          513    .text.OLED_Init     oled.o
+    0x08000724   0x08000724   0x00000002   Code   RO          207    .text.PendSV_Handler  py32f0xx_it.o
+    0x08000726   0x08000726   0x00000002   Code   RO          205    .text.SVC_Handler   py32f0xx_it.o
+    0x08000728   0x08000728   0x00000008   Code   RO          209    .text.SysTick_Handler  py32f0xx_it.o
+    0x08000730   0x08000730   0x00000030   Code   RO            4    .text.SystemInit    system_py32f0xx.o
+    0x08000760   0x08000760   0x00000024   Code   RO          211    .text.TIM14_IRQHandler  py32f0xx_it.o
+    0x08000784   0x08000784   0x0000008c   Code   RO          285    .text.TIM14_UpdateCallback  phy_timer.o
+    0x08000810   0x08000810   0x00000002   Code   RO          335    .text.WatchdogClear  phy_watchdog.o
+    0x08000812   0x08000812   0x00000008   Code   RO          220    .text.__delay_pan742  board.o
+    0x0800081a   0x0800081a   0x00000002   PAD
+    0x0800081c   0x0800081c   0x00000070   Code   RO          452    .text.cb_systick_1ms  os_beason.o
+    0x0800088c   0x0800088c   0x00000060   Code   RO          319    .text.configure_gpio_pattern  phy_gpio.o
+    0x080008ec   0x080008ec   0x00000014   Code   RO          239    .text.control_leds_condition  dev_leds.o
+    0x08000900   0x08000900   0x0000004c   Code   RO          456    .text.delay_ms      os_beason.o
+    0x0800094c   0x0800094c   0x00000018   Code   RO          454    .text.delay_us      os_beason.o
+    0x08000964   0x08000964   0x00000012   Code   RO          323    .text.gpio_write_level  phy_gpio.o
+    0x08000976   0x08000976   0x00000002   PAD
+    0x08000978   0x08000978   0x00000058   Code   RO          224    .text.init_board_global  board.o
+    0x080009d0   0x080009d0   0x00000038   Code   RO          237    .text.init_leds_object  dev_leds.o
+    0x08000a08   0x08000a08   0x00000010   Code   RO          444    .text.is_systick_opened  os_beason.o
+    0x08000a18   0x08000a18   0x0000000e   Code   RO          192    .text.main          main.o
+    0x08000a26   0x08000a26   0x00000002   PAD
+    0x08000a28   0x08000a28   0x00000054   Code   RO          427    .text.open_app_process  kernel.o
+    0x08000a7c   0x08000a7c   0x00000030   Code   RO          442    .text.open_systick_irq  os_beason.o
+    0x08000aac   0x08000aac   0x00000120   Code   RO          470    .text.perform_led_display  app_leds.o
+    0x08000bcc   0x08000bcc   0x00000050   Code   RO          485    .text.task_OLED_screen  app_oled.o
+    0x08000c1c   0x08000c1c   0x00000002   Code   RO          423    .text.task_idle_process  kernel.o
+    0x08000c1e   0x08000c1e   0x00000002   PAD
+    0x08000c20   0x08000c20   0x00000078   Code   RO          472    .text.task_leds_display  app_leds.o
+    0x08000c98   0x08000c98   0x0000000e   Code   RO          958    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x08000ca6   0x08000ca6   0x00000002   Code   RO          959    i.__scatterload_null  mc_p.l(handlers.o)
+    0x08000ca8   0x08000ca8   0x0000000e   Code   RO          960    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x08000cb6   0x08000cb6   0x00000002   PAD
+    0x08000cb8   0x08000cb8   0x00000040   Data   RO            9    .rodata.AHBPrescTable  system_py32f0xx.o
+    0x08000cf8   0x08000cf8   0x00000020   Data   RO           10    .rodata.APBPrescTable  system_py32f0xx.o
+    0x08000d18   0x08000d18   0x00000020   Data   RO           11    .rodata.HSIFreqTable  system_py32f0xx.o
+    0x08000d38   0x08000d38   0x00000020   Data   RO          957    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000d58, Size: 0x00000978, Max: 0x00002000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08000d58   0x000000c0   Data   RW           12    .ARM.__at_0x20000000  system_py32f0xx.o
+    0x200000c0   0x08000e18   0x00000018   Data   RW          429    .data.APPS          kernel.o
+    0x200000d8   0x08000e30   0x00000004   Data   RW            8    .data.SystemCoreClock  system_py32f0xx.o
+    0x200000dc   0x08000e34   0x0000000f   Data   RW          487    .data.aTxBuffer     app_oled.o
+    0x200000eb   0x08000e43   0x00000005   PAD
+    0x200000f0        -       0x00000004   Zero   RW          259    .bss.Devaddress     phy_i2c.o
+    0x200000f4        -       0x00000400   Zero   RW          515    .bss.OLED_buffer    oled.o
+    0x200004f4        -       0x00000004   Zero   RW          260    .bss.State          phy_i2c.o
+    0x200004f8        -       0x00000001   Zero   RW          291    .bss.SysTick_ISR.s_count  phy_timer.o
+    0x200004f9   0x08000e43   0x00000001   PAD
+    0x200004fa        -       0x00000002   Zero   RW          258    .bss.XferCount      phy_i2c.o
+    0x200004fc        -       0x0000000f   Zero   RW          488    .bss.aRxBuffer      app_oled.o
+    0x2000050b   0x08000e43   0x00000001   PAD
+    0x2000050c        -       0x00000004   Zero   RW          287    .bss.g_i_run_time   phy_timer.o
+    0x20000510        -       0x00000001   Zero   RW          290    .bss.g_uc_enable_systick_isr  phy_timer.o
+    0x20000511   0x08000e43   0x00000003   PAD
+    0x20000514        -       0x00000010   Zero   RW          474    .bss.lamps          app_leds.o
+    0x20000524        -       0x00000002   Zero   RW          431    .bss.open_app_process.tick_weak  kernel.o
+    0x20000526   0x08000e43   0x00000002   PAD
+    0x20000528        -       0x00000004   Zero   RW          257    .bss.pBuffPtr       phy_i2c.o
+    0x2000052c        -       0x00000004   Zero   RW          459    .bss.rt             os_beason.o
+    0x20000530        -       0x00000030   Zero   RW          289    .bss.s_t_tmr        phy_timer.o
+    0x20000560        -       0x00000001   Zero   RW          293    .bss.s_uc_timeout_flag  phy_timer.o
+    0x20000561   0x08000e43   0x00000003   PAD
+    0x20000564        -       0x00000004   Zero   RW          292    .bss.s_ui_delay_count  phy_timer.o
+    0x20000568        -       0x00000001   Zero   RW          475    .bss.schedule.0     app_leds.o
+    0x20000569   0x08000e43   0x00000003   PAD
+    0x2000056c        -       0x00000001   Zero   RW          489    .bss.schedule.0     app_oled.o
+    0x2000056d   0x08000e43   0x00000003   PAD
+    0x20000570        -       0x00000001   Zero   RW          476    .bss.schedule.1     app_leds.o
+    0x20000571   0x08000e43   0x00000003   PAD
+    0x20000574        -       0x00000004   Zero   RW          458    .bss.tim_head       os_beason.o
+    0x20000578        -       0x00000400   Zero   RW           20    STACK               startup_py32f030xx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       408        108          0          0         18       2717   app_leds.o
+        80         16          0         15         16       1139   app_oled.o
+        96          8          0          0          0       2580   board.o
+        76          4          0          0          0       1532   dev_leds.o
+       118         12          0         24          2       1435   kernel.o
+        14          0          0          0          0        383   main.o
+        28          4          0          0       1024       3284   oled.o
+       276         40          0          0          8       4478   os_beason.o
+       114          8          0          0          0       3328   phy_gpio.o
+       756         32          0          0         14       6807   phy_i2c.o
+       140         28          0          0         59       6762   phy_timer.o
+         2          0          0          0          0        363   phy_watchdog.o
+        52          4          0          0          0       1806   py32f0xx_it.o
+       176          0          0          0          0       4179   py32f0xx_ll_gpio.o
+       216         16          0          0          0       3840   py32f0xx_ll_i2c.o
+       140         20          0          0          0       8797   py32f0xx_ll_rcc.o
+        40          4          0          0          0       7073   py32f0xx_ll_utils.o
+        28          8        192          0       1024        620   startup_py32f030xx.o
+        92         24        128        196          0       2350   system_py32f0xx.o
+
+    ----------------------------------------------------------------------
+      2864        336        352        236       2188      63473   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        12          0          0          1         23          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        48         10          0          0          0         68   init.o
+        36          0          0          0          0        100   memseta.o
+        62          0          0          0          0         72   uidiv_div0.o
+
+    ----------------------------------------------------------------------
+       200         18          0          0          0        240   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       196         18          0          0          0        240   mc_p.l
+
+    ----------------------------------------------------------------------
+       200         18          0          0          0        240   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3064        354        352        236       2188      63525   Grand Totals
+      3064        354        352        236       2188      63525   ELF Image Totals
+      3064        354        352        236          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3416 (   3.34kB)
+    Total RW  Size (RW Data + ZI Data)              2424 (   2.37kB)
+    Total ROM Size (Code + RO Data + RW Data)       3652 (   3.57kB)
+
+==============================================================================
+
